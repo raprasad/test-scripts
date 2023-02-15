@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.idea/
+.DS_Store
+src/auth_token.py
+test_data/github_json/*.json
+!test_data/github_json/issues_opendp_crm_2023-02-15_16-19-48_all.json
+test_data/output/*.xlsx
+!test_data/output/issues_opendp_crm_2023-02-15_16-19-48.xlsx
