@@ -2,13 +2,15 @@
 
 This repository has two example Python scripts:
 
-(1) `read_repository.py` - Read GitHub Issues
-(2) '`write_spreadsheet.py` - Write selected GitHub issue data to a spreadsheet
+- `read_repository.py` - Read GitHub Issues
+- `write_spreadsheet.py` - Write selected GitHub issue data to a spreadsheet
 
-Very basic instructions are as follows:
+## Long Instructions
+
+The instructions assume Python 3.7+ and ability to install packages via pip.
 
 1. Install the requirements. 
-    - ```pip install -r requirements.txt`
+    - ```pip install -r requirements.txt```
     - This was tested on Python 3.9 but should work with earlier versions
 2. Set your GitHub auth token
    - Within the `src` directory, copy the file `auth_token_template.py` to `auth_token.py`
@@ -38,3 +40,35 @@ Very basic instructions are as follows:
    - All of the input .json files with this prefix will be read, formatted, and written to a single .xlsx file.
    - For the output, look in the directory: 
      - `test-scripts/src/test_data/output/`
+
+## Shorter Instructions
+
+```
+cd test-scripts
+
+# (1) Install requirements
+pip install -r requirements.txt
+
+# (2) Set GitHub Auth Token
+cp auth_token_template.py auth_token.py
+# Add your token to auth_token.py
+
+# (3) Set your GitHub repo to read from
+# Update settings_gh_repo.py
+
+# (4) Read issues
+cd src
+python read_repository.py 
+# JSON files will be output to: test-scripts/src/test_data/github_json/
+# Example output file name: issues_opendp_crm_2023-02-15_16-23-18_001.json
+
+# (5) Write Excel 
+# Find the prefix to your JSON files in (4)
+# Example: "issues_opendp_crm_2023-02-15_16-23-18"
+# ^ For the "prefix", don't include the trailing "_all.json" or page numbers like "_001.json", "_002.json"
+# --------------------
+# Run the next script using the prefix:
+python write_spreadsheet.py issues_opendp_crm_2023-02-15_16-19-48
+
+# Output will be: test-scripts/src/test_data/output/issues_opendp_crm_2023-02-15_16-19-48.xlsx
+```
