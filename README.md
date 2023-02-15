@@ -7,7 +7,7 @@ This repository has two example Python scripts:
 
 ## Long Instructions
 
-The instructions assume Python 3.7+ and ability to install packages via pip.
+The instructions assume Python 3.7+ and ability to install packages via pip. (If using a different package manager, install the two packages in requirements.txt)
 
 1. Install the requirements. 
     - ```pip install -r requirements.txt```
