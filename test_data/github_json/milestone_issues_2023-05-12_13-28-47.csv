@@ -1,0 +1,295 @@
+Milestone ID,Milestone Title,Milestone Url,Issue ID,Issue Number,Issue Title,Issue Description,Issue State,Effort,Priority,Issue Created Date,Issue Updated Date,Issue URL
+MI_kwDOFBAT4c4AjCFw,2023-Q1a: Interactive Measurements (Core),https://github.com/opendp/opendp/milestone/10,I_kwDOFBAT4c5iQ7nV,671,sequential composition IM,Static distances. Simple initial compositor.,CLOSED,,,2023-03-31T03:21:49Z,2023-04-10T22:14:54Z,https://github.com/opendp/opendp/issues/671
+MI_kwDOFBAT4c4AjCFw,2023-Q1a: Interactive Measurements (Core),https://github.com/opendp/opendp/milestone/10,I_kwDOFBAT4c5iQ8ts,672,queryable FFI,Add cross-language support for queryables.,CLOSED,,,2023-03-31T03:29:10Z,2023-04-11T15:39:01Z,https://github.com/opendp/opendp/issues/672
+MI_kwDOFBAT4c4AjCFw,2023-Q1a: Interactive Measurements (Core),https://github.com/opendp/opendp/milestone/10,MDU6SXNzdWU4NTg5NjY1MjE=,80,Interactive Measurement Design,"High-level design for Interactive Measurements from the framework paper:
+
+ Work out type signatures for queryables and responses
+ Define Rust data structures
+ Develop an approach for state management
+ Prototype a few examples",CLOSED,Effort 3 - Large :cake:,Priority 1 - High :zap:,2021-04-15T14:55:07Z,2023-05-04T18:08:37Z,https://github.com/opendp/opendp/issues/80
+MI_kwDOFBAT4c4AjCFw,2023-Q1a: Interactive Measurements (Core),https://github.com/opendp/opendp/milestone/10,I_kwDOFBAT4c5lyNmy,732,Interactive measurement notebook for 0.7 release,Include examples of how to use the new interactive measurement functionality,OPEN,,,2023-05-12T13:42:30Z,2023-05-12T13:43:21Z,https://github.com/opendp/opendp/issues/732
+MI_kwDOFBAT4c4Ajtts,2023-Q1a: Performance / Maintenance,https://github.com/opendp/opendp/milestone/21,I_kwDOFBAT4c5dTlTr,626,`discrete_gaussian_scale_to_accuracy` edge case,"discrete_gaussian_scale_to_accuracy returns an accuracy one too large when the scale is on the lower edge.
+Reported by @alexWhitworth:
+import opendp.accuracy as dp_a
+acc = 2.
+dp_a.discrete_gaussian_scale_to_accuracy(
+    dp_a.accuracy_to_discrete_gaussian_scale(accuracy= acc, alpha=0.1)
+    , alpha= 0.1
+) 
+# returns 3.0, not 2.0
+Thanks for the report!
+Solution:
+The continuation condition in the loop should be total > 0., not total.is_sign_positive(). That is, the loop should break if the total is negative or exactly zero.",CLOSED,,,2023-02-01T04:31:08Z,2023-05-04T17:11:51Z,https://github.com/opendp/opendp/issues/626
+MI_kwDOFBAT4c4Ajtts,2023-Q1a: Performance / Maintenance,https://github.com/opendp/opendp/milestone/21,I_kwDOFBAT4c5daqM0,627,enrich user guide with more extensive notebooks for specific algorithms,,CLOSED,,,2023-02-02T03:42:35Z,2023-05-04T17:11:51Z,https://github.com/opendp/opendp/issues/627
+MI_kwDOFBAT4c4Ajtts,2023-Q1a: Performance / Maintenance,https://github.com/opendp/opendp/milestone/21,I_kwDOFBAT4c5dvLYH,631,0.6.2 release preparation,,CLOSED,,,2023-02-06T14:16:24Z,2023-05-04T17:11:52Z,https://github.com/opendp/opendp/issues/631
+MI_kwDOFBAT4c4Ajtts,2023-Q1a: Performance / Maintenance,https://github.com/opendp/opendp/milestone/21,I_kwDOFBAT4c5fl2gC,646,Remove output domain from Measurement,,CLOSED,,,2023-02-28T20:24:37Z,2023-05-04T17:11:52Z,https://github.com/opendp/opendp/issues/646
+MI_kwDOFBAT4c4Ajtts,2023-Q1a: Performance / Maintenance,https://github.com/opendp/opendp/milestone/21,I_kwDOFBAT4c5furw8,649,use domain/metric/measure FFI to unify Python and Rust API,,CLOSED,,,2023-03-02T04:06:43Z,2023-05-04T17:11:53Z,https://github.com/opendp/opendp/issues/649
+MI_kwDOFBAT4c4Ajtts,2023-Q1a: Performance / Maintenance,https://github.com/opendp/opendp/milestone/21,I_kwDOFBAT4c5iNYU-,668,Reformat Rust code,,CLOSED,,,2023-03-30T13:52:45Z,2023-05-04T17:11:53Z,https://github.com/opendp/opendp/issues/668
+MI_kwDOFBAT4c4Ajtts,2023-Q1a: Performance / Maintenance,https://github.com/opendp/opendp/milestone/21,I_kwDOFBAT4c5iPr8d,670,Deprecate `RelationDebug`,"Some relations pass richer debug information back to the user via errors. Unfortunately, symbol resolution for error construction is very slow, especially on Linux. In most cases, this doesn't matter. But in relations, we should be more careful not to throw exceptions, because relations are used in hot code paths.
+An alternative is to only resolve symbols if the error variant isn't RelationDebug.",CLOSED,,,2023-03-30T20:39:20Z,2023-05-04T17:11:53Z,https://github.com/opendp/opendp/issues/670
+MI_kwDOFBAT4c4Ajtts,2023-Q1a: Performance / Maintenance,https://github.com/opendp/opendp/milestone/21,I_kwDOFBAT4c5i8QIA,693,add extrinsics module for non-Rust code contributions,"We should have a place to store code contributions written in Python or R. From discussions with Andy, this can be in opendp.extrinsics.",CLOSED,,,2023-04-09T18:26:30Z,2023-05-04T17:11:54Z,https://github.com/opendp/opendp/issues/693
+MI_kwDOFBAT4c4Ajtts,2023-Q1a: Performance / Maintenance,https://github.com/opendp/opendp/milestone/21,I_kwDOFBAT4c5kkUFZ,715,Fix Python codegen links,,CLOSED,,,2023-04-27T17:13:08Z,2023-05-04T17:11:54Z,https://github.com/opendp/opendp/issues/715
+MI_kwDOFBAT4c4Ajtts,2023-Q1a: Performance / Maintenance,https://github.com/opendp/opendp/milestone/21,I_kwDOFBAT4c5lsEMO,727,Add free functions for supporting elements,,CLOSED,,,2023-05-11T15:26:37Z,2023-05-11T22:08:23Z,https://github.com/opendp/opendp/issues/727
+MI_kwDOFBAT4c4Ajtts,2023-Q1a: Performance / Maintenance,https://github.com/opendp/opendp/milestone/21,I_kwDOFBAT4c5lsGDK,728,Links from Python API docs to Rust API docs always use latest branch,"For example: https://docs.opendp.org/en/v0.6.2/api/python/opendp.measurements.html#opendp.measurements.make_base_discrete_gaussian points to https://docs.rs/opendp/latest/opendp/measurements/fn.make_base_discrete_gaussian.html.
+make_rustdoc_link looks like it's doing the right thing, not sure what's breaking.",OPEN,,,2023-05-11T15:31:09Z,2023-05-11T15:31:09Z,https://github.com/opendp/opendp/issues/728
+MI_kwDOFBAT4c4AjtwL,2023-Q2: CI Improvements,https://github.com/opendp/opendp/milestone/22,I_kwDOFBAT4c5VAYd-,601,Release process tweaks,"Tweaks that could be made in the release process (noticed in 0.6.0 and 0.6.1):
+
+release_tool.py init -t patch should use release branch for ref, not main
+release_tool.py preflight should install opendp with run_command, not run_command_with_retries
+release_tool.py {preflight|postflight} should run all tests, not just tools/test.py
+release_tool.py watch needs better logic to find the right workflow (and possibly a pause/retries)
+Remove toml from tools/requirements-publish_tool.py",OPEN,Effort 1 - Small :coffee:,,2022-10-27T19:25:48Z,2023-05-04T17:58:31Z,https://github.com/opendp/opendp/issues/601
+MI_kwDOFBAT4c4AjtwL,2023-Q2: CI Improvements,https://github.com/opendp/opendp/milestone/22,I_kwDOFBAT4c5kbvbp,714,Add a nightly build process,"Improve daily testing/checks. (e.g. assists with parts of the project like proofs)
+
+Publish builds to Test PyPI (https://test.pypi.org/)",OPEN,,,2023-04-26T13:04:35Z,2023-05-04T17:53:20Z,https://github.com/opendp/opendp/issues/714
+MI_kwDOFBAT4c4AjtwL,2023-Q2: CI Improvements,https://github.com/opendp/opendp/milestone/22,I_kwDOFBAT4c5lHh1z,725,Test docs as part of PR validation,"Docs are generated after PRs are merged, so it's possible to break the docs without realizing it.
+We should have a step somewhere (probably smoke-test.yml) that tests docs, too.",OPEN,,,2023-05-04T18:06:03Z,2023-05-04T18:06:17Z,https://github.com/opendp/opendp/issues/725
+MI_kwDOFBAT4c4AjCF3,2023-Q2: Higher-Level APIs (Phase I),https://github.com/opendp/opendp/milestone/12,I_kwDOFBAT4c5dQSew,625,High-level API Layer,"Design work for high-level wrappers of core OpenDP functionality. The goal is to create a layer with better ergonomics for common use cases. Some key goals:
+
+Data-centric rather than function-centric
+""Builder style"" construction syntax
+Compound operations allowing creation of common chains in a single step
+Specification of privacy loss directly (rather than via noise scale)
+
+
+References
+
+API ergonomics sample file: d6f1bc6
+Meeting notes which resulted in ^: https://docs.google.com/document/d/1jUDLqXvN-j5KHcKpmEguEFcJC-O6acp8-XMwZUTxsIo/edit#
+
+
+Dependency: Interactive Measurements
+
+#80
+#89",OPEN,Effort 3 - Large :cake:,Priority 1 - High :zap:,2023-01-31T15:34:36Z,2023-04-27T14:22:13Z,https://github.com/opendp/opendp/issues/625
+MI_kwDOFBAT4c4AjYYt,"2023-Q2: Partial Constructors, Domain/Metric Conversions (Phase I)",https://github.com/opendp/opendp/milestone/18,I_kwDOFBAT4c5i1Icm,686,pass input_domain/input_metric into library constructors,"Introduce a new convention to the library: the last (or first) two arguments of constructors are the input domain and input metric. This builds on #645, extending transformations throughout the library to work with all combinations of sized domains, bounded data, nullity and choice of dataset metric.
+The python/R codegen and bootstrap macro can leverage this to automatically build the partial constructors in #664.",CLOSED,,,2023-04-06T21:59:36Z,2023-05-04T17:45:29Z,https://github.com/opendp/opendp/issues/686
+MI_kwDOFBAT4c4AjYYt,"2023-Q2: Partial Constructors, Domain/Metric Conversions (Phase I)",https://github.com/opendp/opendp/milestone/18,I_kwDOFBAT4c5hVV2r,664,Partial Constructors,"This is a proposal to change the signature of constructors to return a partial transformation, or partial measurement, instead of a transformation or measurement as we currently do. Partial transformations/partial measurements are functions that take an input domain and input metric, and return a transformation or measurement.
+partial_trans = make_clamp(bounds)
+clamper = partial_trans(input_domain, input_metric)
+The appeal of this is that you could automatically use the domain descriptors from the previous transformation's output domain as input to the next transformation when chaining.
+input_domain = vector_domain(atom_domain(int), size=20)
+input_metric = symmetric_distance()
+
+dp_sum = (
+  (input_domain, input_metric) >>
+  make_clamp(bounds) >>
+  make_sized_bounded_sum() >>  # where the bounds are taken from make_clamp(bounds).output_domain
+  make_base_discrete_gaussian(scale)
+)
+Example with dataframes:
+input_domain = dataframe_domain(
+  categorical_columns = {
+    ""colA"": [1, 2, 3, 4],
+    ""colB"": [""A"", ""B"", ""C""]
+  },
+  col_counts={
+      (""colA"",): [223, 234, 4525, 34]
+  }
+)
+input_metric = symmetric_distance()
+
+grouped_dp_mean = (
+  (input_domain, input_metric) >>
+  make_partition(by=""colA"", keep_columns=[""colC""]) >>
+  make_map_measurement(
+    make_select_column(""colC"", float) >>
+    make_dp_mean(bounds))
+)
+(where the ProductDomain over which map_measurement operates comes from make_partition)",OPEN,,,2023-03-20T22:56:09Z,2023-04-12T15:14:03Z,https://github.com/opendp/opendp/issues/664
+MI_kwDOFBAT4c4AjYYt,"2023-Q2: Partial Constructors, Domain/Metric Conversions (Phase I)",https://github.com/opendp/opendp/milestone/18,I_kwDOFBAT4c5lHRr4,720,add `make_laplace`,,OPEN,,,2023-05-04T17:28:38Z,2023-05-04T17:28:39Z,https://github.com/opendp/opendp/issues/720
+MI_kwDOFBAT4c4AjYYt,"2023-Q2: Partial Constructors, Domain/Metric Conversions (Phase I)",https://github.com/opendp/opendp/milestone/18,I_kwDOFBAT4c5lHRw-,721,add `make_gaussian`,,OPEN,,,2023-05-04T17:28:55Z,2023-05-04T17:28:55Z,https://github.com/opendp/opendp/issues/721
+MI_kwDOFBAT4c4AjYYt,"2023-Q2: Partial Constructors, Domain/Metric Conversions (Phase I)",https://github.com/opendp/opendp/milestone/18,I_kwDOFBAT4c5lHSBy,722,partial `make_cast`,,OPEN,,,2023-05-04T17:29:53Z,2023-05-04T17:29:53Z,https://github.com/opendp/opendp/issues/722
+MI_kwDOFBAT4c4AjYYt,"2023-Q2: Partial Constructors, Domain/Metric Conversions (Phase I)",https://github.com/opendp/opendp/milestone/18,I_kwDOFBAT4c5lHSVp,723,partial `make_cast_*`,,OPEN,,,2023-05-04T17:30:56Z,2023-05-04T17:30:56Z,https://github.com/opendp/opendp/issues/723
+MI_kwDOFBAT4c4AjYYt,"2023-Q2: Partial Constructors, Domain/Metric Conversions (Phase I)",https://github.com/opendp/opendp/milestone/18,I_kwDOFBAT4c5lHS-v,724,partial `make_row_by_row`,,OPEN,,,2023-05-04T17:32:23Z,2023-05-04T17:32:23Z,https://github.com/opendp/opendp/issues/724
+MI_kwDOFBAT4c4AjRF_,2023-Q2: Performance / Maintenance,https://github.com/opendp/opendp/milestone/15,I_kwDOFBAT4c475PX1,324,Base Exponential (Candidates) -- Implementation,"There's an exponential mechanism we could easily port from previous work on SmartNoise-Core. It would have to sit behind the ""floating-point"" flag.
+This might be too difficult for a first issue, but having a prior implementation should help:
+https://github.com/opendp/smartnoise-core/blob/develop/runtime-rust/src/utilities/mechanisms.rs#L210-L265
+An initial design direction could be as follows--
+input_domain: VectorDomain<AllDomain<TI>> where TI is numeric
+output_domain: TO where TO is integral
+input_metric: AbsoluteDistance<Q>
+output_metric: MaxDivergence<Q>
+
+The measurement takes in a vector of scores, and emits the chosen index.
+Open to other ideas. Another approach for numeric data, that would avoid specifying a candidate set up front would be to take in a sorted vector of (value, score) pairs. The exponential mechanism chooses a pair, and then a value is chosen uniformly from the region halfway to the prior value and halfway to the next value. This has different memory overheads though- the sorted input tuples will be expensive to compute and have double the memory overhead. It may be possible to formulate this as a combinator that evaluates each utility sequentially, and selecting an element via the gumbel distribution.
+Christina's base-2 exponential would be a more robust solution for noising, but I think that belongs in its own issue.",OPEN,,,2021-09-22T23:29:25Z,2023-05-04T17:35:00Z,https://github.com/opendp/opendp/issues/324
+MI_kwDOFBAT4c4AjRF_,2023-Q2: Performance / Maintenance,https://github.com/opendp/opendp/milestone/15,I_kwDOFBAT4c475RAg,325,Quantile Utility -- Implementation,"If we have an exponential mechanism that takes in a vector of scores (#324), we could add an aggregator for quantile utilities. The transformation could behave as follows--
+input_domain: VectorDomain<AllDomain<T>> where T is numeric
+output_domain: VectorDomain<AllDomain<T>>
+input_metric: SymmetricDistance
+output_metric: AbsoluteDistance<T>
+
+The constructor would accept a candidate set, and the function is tasked with converting a vector of numerics into a vector of candidate scores. The exponential mechanism in #324 releases the index into said candidate set.
+For a prior implementation, see: https://github.com/opendp/smartnoise-core/blob/develop/runtime-rust/src/components/quantile.rs#L112-L200
+In the current state of the library, this output metric and domain will not chain with any other constructor than #324. But VectorDomain is probably not the right output domain, as the aggregated data is no longer a dataset!
+A downside with this approach is that multiple quantiles may not be released at once.
+Welcoming opinions on other directions.",OPEN,,,2021-09-22T23:43:44Z,2023-05-04T17:35:37Z,https://github.com/opendp/opendp/issues/325
+MI_kwDOFBAT4c4AjRF_,2023-Q2: Performance / Maintenance,https://github.com/opendp/opendp/milestone/15,I_kwDOFBAT4c5U8D_i,599,version requirement includes semver metadata warning,"When running cargo commands, three variations of the following error are printed:
+warning: /Users/michael/openDP/openDP/rust/opendp_derive/Cargo.toml: version requirement `0.0.0+development` for dependency `opendp_tooling` includes semver metadata which will be ignored, removing the metadata is recommended to avoid confusion
+
+Cargo doesn't like the +development tag.",OPEN,,,2022-10-27T04:56:36Z,2023-04-10T19:07:37Z,https://github.com/opendp/opendp/issues/599
+MI_kwDOFBAT4c4AjRF_,2023-Q2: Performance / Maintenance,https://github.com/opendp/opendp/milestone/15,I_kwDOFBAT4c5WG0gR,611,Add `cargo check --profile test` without features to CI,This currently fails to compile!,OPEN,,,2022-11-10T22:05:49Z,2023-04-10T19:06:27Z,https://github.com/opendp/opendp/issues/611
+MI_kwDOFBAT4c4AjRF_,2023-Q2: Performance / Maintenance,https://github.com/opendp/opendp/milestone/15,I_kwDOFBAT4c5efjqe,636,split Rust `slice_as_object` and `object_as_slice`,"We don't need to bundle the AnyObject logic with FfiSlice; there can be an intermediate generic. If there is an intermediate generic, then row-by-row user-defined functions can directly parse slices without using an AnyObject intermediate.",OPEN,Effort 1 - Small :coffee:,,2023-02-15T07:04:45Z,2023-04-10T19:06:43Z,https://github.com/opendp/opendp/issues/636
+MI_kwDOFBAT4c4AjRF_,2023-Q2: Performance / Maintenance,https://github.com/opendp/opendp/milestone/15,I_kwDOFBAT4c5fUy1i,643,"Change `make_base_geometric` from ""deprecated"" to an ""alias""","I don't think we actually want to completely remove the ""geometric mechanism"", as it's likely what some people will look for first. It just needs to be a thin alias.",OPEN,Effort 1 - Small :coffee:,,2023-02-24T21:17:17Z,2023-04-10T19:07:09Z,https://github.com/opendp/opendp/issues/643
+MI_kwDOFBAT4c4AjRF_,2023-Q2: Performance / Maintenance,https://github.com/opendp/opendp/milestone/15,I_kwDOFBAT4c5fVIVK,644,Rename `TotalOrd` trait to `ProductOrd`,"The TotalOrd trait in OpenDP has the expected behavior, but the name could be improved, as it doesn't actually implement a total order. Specifically on tuples, the product order is used. I propose naming the entire trait the ProductOrd:
+https://en.wikipedia.org/wiki/Product_order",OPEN,Effort 1 - Small :coffee:,,2023-02-24T23:01:12Z,2023-04-10T19:06:54Z,https://github.com/opendp/opendp/issues/644
+MI_kwDOFBAT4c4AjRF_,2023-Q2: Performance / Maintenance,https://github.com/opendp/opendp/milestone/15,I_kwDOFBAT4c5gNMRQ,654,`new_from_constant` should check that `d_in >= 0`,"We have bounds checks in many other places, but should have bounds checks everywhere.
+This can be added by changing new_from_constant to convert to QO first, and then apply the signed-ness check. Add another Signed trait to DistanceConstant and then implement Signed for distance types.
+EG:
+pub trait Sign {
+    fn is_negative(&self) -> bool;
+}
+
+
+macro_rules! impl_is_negative {
+    ($($ty:ty)+) => ($(impl Sign for $ty {
+        fn is_negative(&self) -> bool {
+            self < &Self::zero()
+        }
+    })+)
+}
+
+impl_is_negative!(f32 f64 u8 u16 u32 u64 u128 usize i8 i16 i32 i64 i128 isize);",OPEN,Effort 1 - Small :coffee:,,2023-03-07T19:31:15Z,2023-04-10T19:02:12Z,https://github.com/opendp/opendp/issues/654
+MI_kwDOFBAT4c4AjRF_,2023-Q2: Performance / Maintenance,https://github.com/opendp/opendp/milestone/15,I_kwDOFBAT4c5gNNxk,655,Add `InfRecip` trait,"We use controlled rounding almost everywhere, but didn't control rounding of float reciprocals under the understanding that v.recip() is exact when v is finite and nonzero, due to the structure of floating-point numbers. However, this is not the case.",OPEN,Effort 1 - Small :coffee:,,2023-03-07T19:36:13Z,2023-04-10T19:01:48Z,https://github.com/opendp/opendp/issues/655
+MI_kwDOFBAT4c4AjRF_,2023-Q2: Performance / Maintenance,https://github.com/opendp/opendp/milestone/15,I_kwDOFBAT4c5gNTX4,656,"Adjust privacy maps to return zero `d_out` if `d_in` is zero, regardless of scale","This is a small QOL tweak.
+If d_in is zero (including relaxation parameter if applicable), return a d_out of zero.
+Else if scale is zero, return infinity.
+On many measurements, the current behavior returns infinity if scale is zero, even if d_in is zero.",OPEN,,,2023-03-07T19:53:56Z,2023-04-10T19:01:04Z,https://github.com/opendp/opendp/issues/656
+MI_kwDOFBAT4c4AjRF_,2023-Q2: Performance / Maintenance,https://github.com/opendp/opendp/milestone/15,I_kwDOFBAT4c5htC4q,667,Downcast of IsVec/Column Failing,"Hi everyone,
+I have been working on implementing a SizedDataFrameDomain under Mike's guidance. On the way, I stumbled up on the following difficulty when using the Column struct as_formfunction:  down-casting a Column's content from a dataframe has been failing.
+Here is the code I am using to generate the bug (I run it as a test in rust/src/data/mod.rs). The error orginated from Column.as_form()but also applies IsVec's downcast_ref:
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_vec() {
+        let form = vec![1, 2, 3];
+        test_round_trip(form);
+
+        use crate::{transformations::make_create_dataframe};
+
+        fn print_type_of<T>(_: &T) {
+            println!(""{}"", std::any::type_name::<T>())
+        }
+
+        let transformation = make_create_dataframe::<&str>(vec![""colA"", ""colB""]).unwrap();
+
+        let data_string = vec![
+            vec![""1"".to_owned(), ""A"".to_owned()],
+            vec![""4"".to_owned(), ""A"".to_owned()],
+            vec![""2"".to_owned(), ""B"".to_owned()],
+            vec![""0"".to_owned(), ""A"".to_owned()],
+            vec![""10"".to_owned(), ""B"".to_owned()],
+        ];
+        
+        let df = transformation.invoke(&data_string).unwrap();
+
+        let records = vec![""A"",""A"",""B"",""A"",""B""];
+
+        let data = Column(Box::new(records));
+        println!(""{:?}"", data);
+        
+        let col = df.get(""colB"").unwrap_test()
+                .to_owned();
+        println!(""{:?}"", col);
+
+
+        let tmp = data.0.box_clone();
+        print_type_of(&tmp);
+        let tmp: &Vec<&str> = tmp.as_any().downcast_ref().unwrap_test();
+        print_type_of(&tmp);
+        println!(""{:?}"", tmp);
+        
+        let tmp2 = col.0.box_clone();
+        print_type_of(&tmp2);
+        let tmp2: &Vec<&str> = tmp2.as_any().downcast_ref().unwrap_test();
+        print_type_of(&tmp2);
+        println!(""{:?}"", tmp2);
+
+        let cat = col        
+                .as_form::<Vec<&str>>()
+                .unwrap_test();
+        assert_eq!(data, col);
+
+        println!(""{:?}"", cat);
+
+    }
+
+    // #[test]
+    // #[should_panic]
+    // fn test_bogus() {
+    //     let form = (Data::new(vec![1, 2, 3]), Data::new(99.9));
+    //     let data = Data::new(form);
+    //     let _retrieved: Vec<String> = data.into_form();
+    // }
+
+    fn test_round_trip<T: 'static + IsVec + PartialEq>(form: T) {
+        let data = Column(form.box_clone());
+        assert_eq!(&form, data.as_form().unwrap_test());
+        assert_eq!(form, data.into_form().unwrap_test())
+    }
+}
+
+
+which gives the following error:
+running 1 test
+Column([""A"", ""A"", ""B"", ""A"", ""B""])
+Column([""A"", ""A"", ""B"", ""A"", ""B""])
+alloc::boxed::Box<dyn opendp::data::IsVec>
+&alloc::vec::Vec<&str>
+[""A"", ""A"", ""B"", ""A"", ""B""]
+alloc::boxed::Box<dyn opendp::data::IsVec>
+thread 'data::tests::test_vec' panicked at 'called `Option::unwrap()` on a `None` value', src/data/mod.rs:155:61
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/d5a82bbd26e1ad8b7401f6a718a9c57c96905483/library/std/src/panicking.rs:575:5
+   1: core::panicking::panic_fmt
+             at /rustc/d5a82bbd26e1ad8b7401f6a718a9c57c96905483/library/core/src/panicking.rs:64:14
+   2: core::panicking::panic
+             at /rustc/d5a82bbd26e1ad8b7401f6a718a9c57c96905483/library/core/src/panicking.rs:111:5
+   3: core::option::Option<T>::unwrap
+             at /rustc/d5a82bbd26e1ad8b7401f6a718a9c57c96905483/library/core/src/option.rs:778:21
+   4: opendp::data::tests::test_vec
+             at ./src/data/mod.rs:155:32
+   5: opendp::data::tests::test_vec::{{closure}}
+             at ./src/data/mod.rs:115:19
+   6: core::ops::function::FnOnce::call_once
+             at /rustc/d5a82bbd26e1ad8b7401f6a718a9c57c96905483/library/core/src/ops/function.rs:507:5
+   7: core::ops::function::FnOnce::call_once
+             at /rustc/d5a82bbd26e1ad8b7401f6a718a9c57c96905483/library/core/src/ops/function.rs:507:5
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+test data::tests::test_vec ... FAILED
+
+I am having a hard time figuring out if I am doing something wrong (I am a Rust beginner) or if there is indeed an issue with the current downcasting of Columns/IsVec. Surprisingly it seems to work fine in make_select_column.
+Any pointer / help would be very helpful, many thanks in advance!",OPEN,,,2023-03-24T11:13:09Z,2023-04-10T18:59:40Z,https://github.com/opendp/opendp/issues/667
+MI_kwDOFBAT4c4AjRF_,2023-Q2: Performance / Maintenance,https://github.com/opendp/opendp/milestone/15,I_kwDOFBAT4c5ilk_E,680,Update citation.cff to include individual contributors,"Update initial authors section to include all contributors.
+(changed after @Shoeboxam's comment below)",OPEN,,,2023-04-04T14:35:28Z,2023-04-12T18:53:00Z,https://github.com/opendp/opendp/issues/680
+MI_kwDOFBAT4c4AjRF_,2023-Q2: Performance / Maintenance,https://github.com/opendp/opendp/milestone/15,I_kwDOFBAT4c5i1HWI,685,Factor `make_base_*` into vector- and scalar- valued versions,"This seems to be a footgun in the library- passing D is awkward, and the proof documents are more convoluted because of the abstraction.
+We would refactor the current constructors to simply call the scalar or vector-valued versions.",OPEN,,,2023-04-06T21:55:15Z,2023-04-10T19:08:08Z,https://github.com/opendp/opendp/issues/685
+MI_kwDOFBAT4c4AjRF_,2023-Q2: Performance / Maintenance,https://github.com/opendp/opendp/milestone/15,I_kwDOFBAT4c5jY42x,698,Remove visibility of Trans/Meas attributes,"It is possible to construct a measurement or transformation that does not satisfy domain/metric compatibility checks by constructing a measurement or transformation struct directly, instead of calling the new helper, or by mutating one of the members.",OPEN,,,2023-04-14T03:56:30Z,2023-04-14T03:56:30Z,https://github.com/opendp/opendp/issues/698
+MI_kwDOFBAT4c4AjRF_,2023-Q2: Performance / Maintenance,https://github.com/opendp/opendp/milestone/15,I_kwDOFBAT4c5jxol4,707,Further optimization of backtrace handling,"In #691, we discovered that easy solution for enabling/disabling backtrace resolution isn't possible, because Rust caches the environment variable: https://doc.rust-lang.org/std/backtrace/index.html
+Because the performance with std::backtrace is much faster than the old backtrace crate, we decided to live with the simple solution of always enabling backtraces.
+If this becomes a problem, the proposed approach would be:
+
+Have an FFI function to set a flag. If the flag is on, Rust calls Backtrace::force_capture, otherwise it calls Backtrace::capture.
+Python sets the flag on startup, and unsets it during binary search.
+Rust programs can opt into backtraces in the usual way (setting the standard env variable).",OPEN,,,2023-04-18T23:27:49Z,2023-04-25T14:42:29Z,https://github.com/opendp/opendp/issues/707
+MI_kwDOFBAT4c4AjRF_,2023-Q2: Performance / Maintenance,https://github.com/opendp/opendp/milestone/15,I_kwDOFBAT4c5kD4FO,711,Add a prelude for OpenDP Python,"When you want to use the library, you oftentimes need a large set of imports:
+from opendp.combinators import *
+from opendp.transformations import *
+from opendp.measurements import *
+from opendp.domains import *
+from opendp.metrics import *
+from opendp.measures import *
+from opendp.typing import *
+from opendp.accuracy import *
+It would be convenient if you could access all of these from a prelude module:
+import opendp.prelude as odp
+or
+from opendp.prelude import *",OPEN,,,2023-04-21T15:52:10Z,2023-04-21T16:11:04Z,https://github.com/opendp/opendp/issues/711
+MI_kwDOFBAT4c4Ajk8v,2023-Q3: Interactive Measurements (Mechanisms),https://github.com/opendp/opendp/milestone/20,I_kwDOFBAT4c5ia9Hn,673,basic sequential composition odometer,,OPEN,,,2023-04-03T02:43:12Z,2023-04-25T14:59:04Z,https://github.com/opendp/opendp/issues/673
+MI_kwDOFBAT4c4Ajk8v,2023-Q3: Interactive Measurements (Mechanisms),https://github.com/opendp/opendp/milestone/20,I_kwDOFBAT4c5ifUqK,677,odometer FFI,,OPEN,,,2023-04-03T16:16:03Z,2023-04-25T14:59:05Z,https://github.com/opendp/opendp/issues/677
+MI_kwDOFBAT4c4Ajk8v,2023-Q3: Interactive Measurements (Mechanisms),https://github.com/opendp/opendp/milestone/20,I_kwDOFBAT4c5imOOM,681,concurrent composition,,OPEN,,,2023-04-04T16:15:18Z,2023-04-25T14:59:06Z,https://github.com/opendp/opendp/issues/681
+MI_kwDOFBAT4c4Ajk8v,2023-Q3: Interactive Measurements (Mechanisms),https://github.com/opendp/opendp/milestone/20,I_kwDOFBAT4c5imT2l,683,sparse vector mechanism,,OPEN,,,2023-04-04T16:33:13Z,2023-04-25T14:59:07Z,https://github.com/opendp/opendp/issues/683

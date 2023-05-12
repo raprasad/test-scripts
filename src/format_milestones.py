@@ -2,11 +2,14 @@
 Create a tabular summary of milestones and issues
 """
 import json
-import shared_vals as svals
+import sys
 from datetime import datetime
 from os.path import isfile, join
 
-today_str = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+import pandas as pd
+
+import shared_vals as svals
+
 
 class MilestoneFormatter:
 
@@ -18,6 +21,7 @@ class MilestoneFormatter:
         self.milestone_input_data = json.load(open(self.json_filename, 'r'))
         self.milestone_output_data = []
 
+        self.today_str = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
         self.create_milestone_basic_report()
         self.init_data()
         self.create_milestone_issue_report()
@@ -39,10 +43,16 @@ class MilestoneFormatter:
 
         self.milestone_output_data = basic_milestone_data
 
-        today_str = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-        json_output_filename = join(svals.GITHUB_JSON_DATA_DIR, (f'milestone_basics_{today_str}.json'))
+        json_output_filename = join(svals.GITHUB_JSON_DATA_DIR, (f'milestone_basics_{self.today_str}.json'))
         json.dump(self.milestone_output_data, open(json_output_filename, 'w'), indent=2)
         print('file written: ', json_output_filename)
+
+        df = pd.DataFrame(data=self.milestone_output_data[1:],
+                          columns=self.milestone_output_data[0])
+
+        csv_filename = join(svals.GITHUB_JSON_DATA_DIR, (f'milestone_basics_{self.today_str}.csv'))
+        df.to_csv(csv_filename, index=False)
+        print(f'CSV file written: {csv_filename}')
 
     def process_milestone_basic_report(self, ms):
         """Process a single milestone and its related issues, return a row of dat"""
@@ -64,7 +74,6 @@ class MilestoneFormatter:
         ]
         return ms_data_row
 
-
     def get_headers_basic_report(self):
         """Return a list of column headers"""
         return ['Milestone ID',
@@ -78,7 +87,6 @@ class MilestoneFormatter:
                 'Due Date',
                 'Created Date',
                 'Updated Date']
-
 
     def create_milestone_issue_report(self):
         """
@@ -95,10 +103,19 @@ class MilestoneFormatter:
 
         self.milestone_output_data = issues_data
 
-        today_str = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-        json_output_filename = join(svals.GITHUB_JSON_DATA_DIR, (f'milestone_issues_{today_str}.json'))
+        df = pd.DataFrame(data=self.milestone_output_data[1:],
+                          columns=self.milestone_output_data[0])
+
+        csv_filename = join(svals.GITHUB_JSON_DATA_DIR, (f'milestone_issues_{self.today_str}.csv'))
+        df.to_csv(csv_filename, index=False)
+        print(f'CSV file written: {csv_filename}')
+        #print(df.head())
+        sys.exit(0)
+
+        json_output_filename = join(svals.GITHUB_JSON_DATA_DIR, (f'milestone_issues_{self.today_str}.json'))
         json.dump(self.milestone_output_data, open(json_output_filename, 'w'), indent=2)
         print('file written: ', json_output_filename)
+
 
 
     def process_milestone_issue_report(self, ms):
@@ -113,7 +130,6 @@ class MilestoneFormatter:
 
         issue_data_rows = []
         for issue_info in issue_data_list:
-
             # Format effort label
             effort_label = self.retrieve_by_prefix(issue_info['labels']['nodes'], 'Effort')
             priority_label = self.retrieve_by_prefix(issue_info['labels']['nodes'], 'Priority')
@@ -128,7 +144,7 @@ class MilestoneFormatter:
                 priority_label,
                 issue_info['createdAt'],
                 issue_info['updatedAt'],
-                issue_info['url'],]
+                issue_info['url'], ]
             issue_data_rows.append(single_issue_data_row)
 
         return issue_data_rows
@@ -156,12 +172,11 @@ class MilestoneFormatter:
                 'Effort',
                 'Priority',
                 'Issue Created Date',
-                'Issue Updated Date'
+                'Issue Updated Date',
                 'Issue URL',
                 ]
+
 
 if __name__ == '__main__':
     input_json = join(svals.GRAPHQL_RESULTS, 'milestone_summary_2023-05-12_12-58-57.json')
     mf = MilestoneFormatter(input_json)
-
-

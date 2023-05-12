@@ -1,0 +1,1816 @@
+{
+    "repository": {
+        "nameWithOwner": "opendp/opendp",
+        "id": "MDEwOlJlcG9zaXRvcnkzMzY1OTc5ODU=",
+        "milestones": {
+            "nodes": [
+                {
+                    "id": "MI_kwDOFBAT4c4AjCFw",
+                    "title": "2023-Q1a: Interactive Measurements (Core)",
+                    "description": "For the 0.7 release",
+                    "closed": false,
+                    "progressPercentage": 80.0,
+                    "dueOn": null,
+                    "createdAt": "2023-03-20T21:35:20Z",
+                    "updatedAt": "2023-05-12T13:43:21Z",
+                    "issues": {
+                        "totalCount": 4,
+                        "nodes": [
+                            {
+                                "id": "I_kwDOFBAT4c5lyNmy",
+                                "title": "Interactive measurement notebook for 0.7 release",
+                                "bodyText": "Include examples of how to use the new interactive measurement functionality",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/732",
+                                "number": 732,
+                                "createdAt": "2023-05-12T13:42:30Z",
+                                "updatedAt": "2023-05-12T13:43:21Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU4NTg5NjY1MjE=",
+                                "title": "Interactive Measurement Design",
+                                "bodyText": "High-level design for Interactive Measurements from the framework paper:\n\n Work out type signatures for queryables and responses\n Define Rust data structures\n Develop an approach for state management\n Prototype a few examples",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/80",
+                                "number": 80,
+                                "createdAt": "2021-04-15T14:55:07Z",
+                                "updatedAt": "2023-05-04T18:08:37Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDY0",
+                                            "name": "Effort 3 - Large :cake:"
+                                        },
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI4MTQw",
+                                            "name": "Priority 1 - High :zap:"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5iQ7nV",
+                                "title": "sequential composition IM",
+                                "bodyText": "Static distances. Simple initial compositor.",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/671",
+                                "number": 671,
+                                "createdAt": "2023-03-31T03:21:49Z",
+                                "updatedAt": "2023-04-10T22:14:54Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5iQ8ts",
+                                "title": "queryable FFI",
+                                "bodyText": "Add cross-language support for queryables.",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/672",
+                                "number": 672,
+                                "createdAt": "2023-03-31T03:29:10Z",
+                                "updatedAt": "2023-04-11T15:39:01Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            }
+                        ]
+                    },
+                    "number": 10,
+                    "url": "https://github.com/opendp/opendp/milestone/10",
+                    "state": "OPEN"
+                },
+                {
+                    "id": "MI_kwDOFBAT4c4AjCFz",
+                    "title": "999 - Proofs and Vetting (core)",
+                    "description": "For a core set of proof components, move proofs from contrib to vetted status.\r\nPlaceholder for all proofs, to be moved incrementally to quarterly milestones",
+                    "closed": false,
+                    "progressPercentage": 8.823529411764707,
+                    "dueOn": null,
+                    "createdAt": "2023-03-20T21:35:41Z",
+                    "updatedAt": "2023-05-12T16:24:43Z",
+                    "issues": {
+                        "totalCount": 34,
+                        "nodes": [
+                            {
+                                "id": "MDU6SXNzdWU5MjMzMzI3NjI=",
+                                "title": "`make_base_laplace` -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/111",
+                                "number": 111,
+                                "createdAt": "2021-06-17T02:23:52Z",
+                                "updatedAt": "2023-04-10T18:48:53Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDU3",
+                                            "name": "Effort 2 - Medium :cookie:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5MjMzMzkyODM=",
+                                "title": "`make_base_gaussian` -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/112",
+                                "number": 112,
+                                "createdAt": "2021-06-17T02:33:54Z",
+                                "updatedAt": "2023-04-10T18:48:54Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDU3",
+                                            "name": "Effort 2 - Medium :cookie:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5MjMzNDQ0MjU=",
+                                "title": "`make_base_discrete_laplace` -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/114",
+                                "number": 114,
+                                "createdAt": "2021-06-17T02:40:49Z",
+                                "updatedAt": "2023-04-10T18:48:54Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDU3",
+                                            "name": "Effort 2 - Medium :cookie:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5MjMzNTQ3NDY=",
+                                "title": "Stability Mechanism -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/117",
+                                "number": 117,
+                                "createdAt": "2021-06-17T02:56:11Z",
+                                "updatedAt": "2023-04-10T18:48:55Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDU3",
+                                            "name": "Effort 2 - Medium :cookie:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5MjQxNzUxNzY=",
+                                "title": "Impute Constant Transformation -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/118",
+                                "number": 118,
+                                "createdAt": "2021-06-17T17:29:59Z",
+                                "updatedAt": "2023-04-10T18:48:55Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDMw",
+                                            "name": "Effort 1 - Small :coffee:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5MjQxNzc3MzQ=",
+                                "title": "Clamp Transformation -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/119",
+                                "number": 119,
+                                "createdAt": "2021-06-17T17:33:43Z",
+                                "updatedAt": "2023-04-10T18:48:56Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDMw",
+                                            "name": "Effort 1 - Small :coffee:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5MjQxODI5MzA=",
+                                "title": "Resize Transformation -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/120",
+                                "number": 120,
+                                "createdAt": "2021-06-17T17:41:51Z",
+                                "updatedAt": "2023-04-10T18:48:57Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDU3",
+                                            "name": "Effort 2 - Medium :cookie:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5MjQxODQwMTU=",
+                                "title": "Sized Bounded Sum Transformation -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/121",
+                                "number": 121,
+                                "createdAt": "2021-06-17T17:43:29Z",
+                                "updatedAt": "2023-04-10T18:48:57Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDMw",
+                                            "name": "Effort 1 - Small :coffee:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5MjQxOTU1NjE=",
+                                "title": "Mean Transformation -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/122",
+                                "number": 122,
+                                "createdAt": "2021-06-17T17:59:42Z",
+                                "updatedAt": "2023-04-10T18:48:57Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDMw",
+                                            "name": "Effort 1 - Small :coffee:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5MjQyMTEzODI=",
+                                "title": "Histogram Transformation -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/124",
+                                "number": 124,
+                                "createdAt": "2021-06-17T18:21:19Z",
+                                "updatedAt": "2023-04-10T18:48:58Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDU3",
+                                            "name": "Effort 2 - Medium :cookie:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5MjQyMjkyNTA=",
+                                "title": "(Co)variance Transformation -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/126",
+                                "number": 126,
+                                "createdAt": "2021-06-17T18:42:52Z",
+                                "updatedAt": "2023-04-10T18:48:59Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDU3",
+                                            "name": "Effort 2 - Medium :cookie:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5MjQyMzQ1MDU=",
+                                "title": "Dataframe Transformations -- Proofs",
+                                "bodyText": "Presumably all the dataframe stuff is stability 1, but opening this issue just to make sure we're covered.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/128",
+                                "number": 128,
+                                "createdAt": "2021-06-17T18:50:16Z",
+                                "updatedAt": "2023-04-10T18:48:59Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDMw",
+                                            "name": "Effort 1 - Small :coffee:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5MjQyNDUyMTE=",
+                                "title": "Cast Transformation -- Proof",
+                                "bodyText": "This should be very straightforward, but opening to make sure we don't forget about it.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/129",
+                                "number": 129,
+                                "createdAt": "2021-06-17T19:05:15Z",
+                                "updatedAt": "2023-04-10T18:49:00Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDMw",
+                                            "name": "Effort 1 - Small :coffee:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5MjQyODI2MzI=",
+                                "title": "Chain_TT Combinator -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/133",
+                                "number": 133,
+                                "createdAt": "2021-06-17T20:00:40Z",
+                                "updatedAt": "2023-04-10T18:49:00Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDU3",
+                                            "name": "Effort 2 - Medium :cookie:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5MjQyODQ5MjE=",
+                                "title": "Chain_MT Combinator -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/134",
+                                "number": 134,
+                                "createdAt": "2021-06-17T20:03:48Z",
+                                "updatedAt": "2023-04-10T18:49:01Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDU3",
+                                            "name": "Effort 2 - Medium :cookie:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5MjQyOTQ2MzQ=",
+                                "title": "Basic Composition Combinator -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/136",
+                                "number": 136,
+                                "createdAt": "2021-06-17T20:15:52Z",
+                                "updatedAt": "2023-04-10T18:49:01Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDU3",
+                                            "name": "Effort 2 - Medium :cookie:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5Mjc2MzI4NzA=",
+                                "title": "Count-Distinct Transformation -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/152",
+                                "number": 152,
+                                "createdAt": "2021-06-22T21:05:42Z",
+                                "updatedAt": "2023-04-10T18:49:02Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDMw",
+                                            "name": "Effort 1 - Small :coffee:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5Mjk3MjUxMzI=",
+                                "title": "Count By (Categories) Known N -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/158",
+                                "number": 158,
+                                "createdAt": "2021-06-25T00:44:34Z",
+                                "updatedAt": "2023-04-10T18:49:03Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDMw",
+                                            "name": "Effort 1 - Small :coffee:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5Mzg0MzA2NzU=",
+                                "title": "Amplification -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/168",
+                                "number": 168,
+                                "createdAt": "2021-07-07T03:02:00Z",
+                                "updatedAt": "2023-04-10T18:49:03Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDU3",
+                                            "name": "Effort 2 - Medium :cookie:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5NTE4MDM4MTY=",
+                                "title": "Sparse histogram -- Proof",
+                                "bodyText": "Proof for #183.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/190",
+                                "number": 190,
+                                "createdAt": "2021-07-23T18:20:30Z",
+                                "updatedAt": "2023-04-10T18:49:04Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDY0",
+                                            "name": "Effort 3 - Large :cake:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5NTE4MTAwODk=",
+                                "title": "Discrete Gaussian Mechanism -- Proof",
+                                "bodyText": "Proof for #186.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/191",
+                                "number": 191,
+                                "createdAt": "2021-07-23T18:30:27Z",
+                                "updatedAt": "2023-04-10T18:49:04Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDU3",
+                                            "name": "Effort 2 - Medium :cookie:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5NTE4MTIzNjk=",
+                                "title": "Randomized response -- Proof",
+                                "bodyText": "Proof for #187.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/192",
+                                "number": 192,
+                                "createdAt": "2021-07-23T18:34:35Z",
+                                "updatedAt": "2023-04-10T18:49:06Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDU3",
+                                            "name": "Effort 2 - Medium :cookie:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c475XTN",
+                                "title": "Bounded Sum Transformation (Unknown N) -- Proof",
+                                "bodyText": "See opendp/whitepapers#7",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/329",
+                                "number": 329,
+                                "createdAt": "2021-09-23T00:32:05Z",
+                                "updatedAt": "2023-04-10T18:49:06Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c475Xme",
+                                "title": "Is Equal Transformation -- Proof",
+                                "bodyText": "See opendp/whitepapers#2",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/330",
+                                "number": 330,
+                                "createdAt": "2021-09-23T00:33:57Z",
+                                "updatedAt": "2023-04-10T18:49:07Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c48bCO8",
+                                "title": "Drop Null -- Proof",
+                                "bodyText": "Proof for #347.\nShould be trivial, opening an issue just so we don't forget.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/358",
+                                "number": 358,
+                                "createdAt": "2021-10-01T20:07:00Z",
+                                "updatedAt": "2023-04-10T18:49:08Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDMw",
+                                            "name": "Effort 1 - Small :coffee:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c48bC5G",
+                                "title": "Binning -- Proof",
+                                "bodyText": "Proof for #320.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/359",
+                                "number": 359,
+                                "createdAt": "2021-10-01T20:10:15Z",
+                                "updatedAt": "2023-04-10T18:49:08Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDU3",
+                                            "name": "Effort 2 - Medium :cookie:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        },
+                                        {
+                                            "id": "MDU6TGFiZWwyNzIwODgwMDY5",
+                                            "name": "good first issue"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5S3JFL",
+                                "title": "Prove `make_row_by_row`",
+                                "bodyText": "Can adapt from this proof:\nopendp/whitepapers#11\nThis is a foundational proof that will be referred to by a large number of other proofs.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/562",
+                                "number": 562,
+                                "createdAt": "2022-09-29T03:11:24Z",
+                                "updatedAt": "2023-04-10T18:49:09Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI4MTQw",
+                                            "name": "Priority 1 - High :zap:"
+                                        },
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5TjX88",
+                                "title": "Confidence interval estimation via Stratified Datasets -- Proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/570",
+                                "number": 570,
+                                "createdAt": "2022-10-08T01:40:36Z",
+                                "updatedAt": "2023-04-10T18:49:10Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5jjYZn",
+                                "title": "`make_quantile_score_candidates` proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/700",
+                                "number": 700,
+                                "createdAt": "2023-04-17T00:39:35Z",
+                                "updatedAt": "2023-04-25T14:44:04Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5jjY6m",
+                                "title": "`make_base_discrete_exponential` proof",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/701",
+                                "number": 701,
+                                "createdAt": "2023-04-17T00:45:36Z",
+                                "updatedAt": "2023-04-25T14:43:23Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABQEGIRQ",
+                                            "name": "Proof"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5lr5QZ",
+                                "title": "OpenDP Reviewing Initiation Notebook",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/726",
+                                "number": 726,
+                                "createdAt": "2023-05-11T15:02:02Z",
+                                "updatedAt": "2023-05-11T15:02:25Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5MjQyNDg4ODA=",
+                                "title": "RowTransform Transformation -- Proof",
+                                "bodyText": "",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/130",
+                                "number": 130,
+                                "createdAt": "2021-06-17T19:10:07Z",
+                                "updatedAt": "2023-04-05T14:37:12Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDU3",
+                                            "name": "Effort 2 - Medium :cookie:"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "MDU6SXNzdWU5NDk4NDUwMTg=",
+                                "title": "Compatible pairings of domains and metrics",
+                                "bodyText": "There is interest in using the type system to enforce compatible pairings of metrics and domains.",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/185",
+                                "number": 185,
+                                "createdAt": "2021-07-21T15:31:00Z",
+                                "updatedAt": "2023-04-18T03:31:10Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDU3",
+                                            "name": "Effort 2 - Medium :cookie:"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5fUoVw",
+                                "title": "Move certain domain descriptors out of type system",
+                                "bodyText": "Discussion here, subject to feedback:\nhttps://opendp.slack.com/archives/C02L2AQ972S/p1677087160848229",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/642",
+                                "number": 642,
+                                "createdAt": "2023-02-24T20:31:41Z",
+                                "updatedAt": "2023-04-15T00:03:51Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            }
+                        ]
+                    },
+                    "number": 11,
+                    "url": "https://github.com/opendp/opendp/milestone/11",
+                    "state": "OPEN"
+                },
+                {
+                    "id": "MI_kwDOFBAT4c4AjCF3",
+                    "title": "2023-Q2: Higher-Level APIs (Phase I)",
+                    "description": "- Basic chaining notation in place \r\n- System to read what is available in the set of constructors",
+                    "closed": false,
+                    "progressPercentage": 0.0,
+                    "dueOn": null,
+                    "createdAt": "2023-03-20T21:35:53Z",
+                    "updatedAt": "2023-05-04T17:22:58Z",
+                    "issues": {
+                        "totalCount": 1,
+                        "nodes": [
+                            {
+                                "id": "I_kwDOFBAT4c5dQSew",
+                                "title": "High-level API Layer",
+                                "bodyText": "Design work for high-level wrappers of core OpenDP functionality. The goal is to create a layer with better ergonomics for common use cases. Some key goals:\n\nData-centric rather than function-centric\n\"Builder style\" construction syntax\nCompound operations allowing creation of common chains in a single step\nSpecification of privacy loss directly (rather than via noise scale)\n\n\nReferences\n\nAPI ergonomics sample file: d6f1bc6\nMeeting notes which resulted in ^: https://docs.google.com/document/d/1jUDLqXvN-j5KHcKpmEguEFcJC-O6acp8-XMwZUTxsIo/edit#\n\n\nDependency: Interactive Measurements\n\n#80\n#89",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/625",
+                                "number": 625,
+                                "createdAt": "2023-01-31T15:34:36Z",
+                                "updatedAt": "2023-04-27T14:22:13Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDY0",
+                                            "name": "Effort 3 - Large :cake:"
+                                        },
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI4MTQw",
+                                            "name": "Priority 1 - High :zap:"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "number": 12,
+                    "url": "https://github.com/opendp/opendp/milestone/12",
+                    "state": "OPEN"
+                },
+                {
+                    "id": "MI_kwDOFBAT4c4AjCF6",
+                    "title": "External Compute",
+                    "description": "",
+                    "closed": false,
+                    "progressPercentage": 0.0,
+                    "dueOn": null,
+                    "createdAt": "2023-03-20T21:36:10Z",
+                    "updatedAt": "2023-04-12T18:55:44Z",
+                    "issues": {
+                        "totalCount": 1,
+                        "nodes": [
+                            {
+                                "id": "I_kwDOFBAT4c49DBTS",
+                                "title": "External Compute Design",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/363",
+                                "number": 363,
+                                "createdAt": "2021-10-12T19:21:01Z",
+                                "updatedAt": "2023-04-04T15:27:19Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDY0",
+                                            "name": "Effort 3 - Large :cake:"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "number": 13,
+                    "url": "https://github.com/opendp/opendp/milestone/13",
+                    "state": "OPEN"
+                },
+                {
+                    "id": "MI_kwDOFBAT4c4AjCF8",
+                    "title": "R-Language Bindings",
+                    "description": "",
+                    "closed": false,
+                    "progressPercentage": 0.0,
+                    "dueOn": null,
+                    "createdAt": "2023-03-20T21:36:44Z",
+                    "updatedAt": "2023-04-12T14:26:54Z",
+                    "issues": {
+                        "totalCount": 1,
+                        "nodes": [
+                            {
+                                "id": "I_kwDOFBAT4c49DvI1",
+                                "title": "R language bindings",
+                                "bodyText": "Support for the R language is a very common request!\nThere is a stub R library I wrote in this private repo here:\nhttps://github.com/opendp/smartnoise-core-R",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/365",
+                                "number": 365,
+                                "createdAt": "2021-10-12T21:01:54Z",
+                                "updatedAt": "2023-04-04T15:23:16Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDY0",
+                                            "name": "Effort 3 - Large :cake:"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "number": 14,
+                    "url": "https://github.com/opendp/opendp/milestone/14",
+                    "state": "OPEN"
+                },
+                {
+                    "id": "MI_kwDOFBAT4c4AjRF_",
+                    "title": "2023-Q2: Performance / Maintenance",
+                    "description": "Used retrospectively to see issues completed per quarter (or other time period) related to maintenance/performance--indirectly related to functionality initiatives.",
+                    "closed": false,
+                    "progressPercentage": 0.0,
+                    "dueOn": null,
+                    "createdAt": "2023-04-04T15:21:28Z",
+                    "updatedAt": "2023-05-12T16:22:18Z",
+                    "issues": {
+                        "totalCount": 16,
+                        "nodes": [
+                            {
+                                "id": "I_kwDOFBAT4c5htC4q",
+                                "title": "Downcast of IsVec/Column Failing",
+                                "bodyText": "Hi everyone,\nI have been working on implementing a SizedDataFrameDomain under Mike's guidance. On the way, I stumbled up on the following difficulty when using the Column struct as_formfunction:  down-casting a Column's content from a dataframe has been failing.\nHere is the code I am using to generate the bug (I run it as a test in rust/src/data/mod.rs). The error orginated from Column.as_form()but also applies IsVec's downcast_ref:\n#[cfg(test)]\nmod tests {\n    use super::*;\n\n    #[test]\n    fn test_vec() {\n        let form = vec![1, 2, 3];\n        test_round_trip(form);\n\n        use crate::{transformations::make_create_dataframe};\n\n        fn print_type_of<T>(_: &T) {\n            println!(\"{}\", std::any::type_name::<T>())\n        }\n\n        let transformation = make_create_dataframe::<&str>(vec![\"colA\", \"colB\"]).unwrap();\n\n        let data_string = vec![\n            vec![\"1\".to_owned(), \"A\".to_owned()],\n            vec![\"4\".to_owned(), \"A\".to_owned()],\n            vec![\"2\".to_owned(), \"B\".to_owned()],\n            vec![\"0\".to_owned(), \"A\".to_owned()],\n            vec![\"10\".to_owned(), \"B\".to_owned()],\n        ];\n        \n        let df = transformation.invoke(&data_string).unwrap();\n\n        let records = vec![\"A\",\"A\",\"B\",\"A\",\"B\"];\n\n        let data = Column(Box::new(records));\n        println!(\"{:?}\", data);\n        \n        let col = df.get(\"colB\").unwrap_test()\n                .to_owned();\n        println!(\"{:?}\", col);\n\n\n        let tmp = data.0.box_clone();\n        print_type_of(&tmp);\n        let tmp: &Vec<&str> = tmp.as_any().downcast_ref().unwrap_test();\n        print_type_of(&tmp);\n        println!(\"{:?}\", tmp);\n        \n        let tmp2 = col.0.box_clone();\n        print_type_of(&tmp2);\n        let tmp2: &Vec<&str> = tmp2.as_any().downcast_ref().unwrap_test();\n        print_type_of(&tmp2);\n        println!(\"{:?}\", tmp2);\n\n        let cat = col        \n                .as_form::<Vec<&str>>()\n                .unwrap_test();\n        assert_eq!(data, col);\n\n        println!(\"{:?}\", cat);\n\n    }\n\n    // #[test]\n    // #[should_panic]\n    // fn test_bogus() {\n    //     let form = (Data::new(vec![1, 2, 3]), Data::new(99.9));\n    //     let data = Data::new(form);\n    //     let _retrieved: Vec<String> = data.into_form();\n    // }\n\n    fn test_round_trip<T: 'static + IsVec + PartialEq>(form: T) {\n        let data = Column(form.box_clone());\n        assert_eq!(&form, data.as_form().unwrap_test());\n        assert_eq!(form, data.into_form().unwrap_test())\n    }\n}\n\n\nwhich gives the following error:\nrunning 1 test\nColumn([\"A\", \"A\", \"B\", \"A\", \"B\"])\nColumn([\"A\", \"A\", \"B\", \"A\", \"B\"])\nalloc::boxed::Box<dyn opendp::data::IsVec>\n&alloc::vec::Vec<&str>\n[\"A\", \"A\", \"B\", \"A\", \"B\"]\nalloc::boxed::Box<dyn opendp::data::IsVec>\nthread 'data::tests::test_vec' panicked at 'called `Option::unwrap()` on a `None` value', src/data/mod.rs:155:61\nstack backtrace:\n   0: rust_begin_unwind\n             at /rustc/d5a82bbd26e1ad8b7401f6a718a9c57c96905483/library/std/src/panicking.rs:575:5\n   1: core::panicking::panic_fmt\n             at /rustc/d5a82bbd26e1ad8b7401f6a718a9c57c96905483/library/core/src/panicking.rs:64:14\n   2: core::panicking::panic\n             at /rustc/d5a82bbd26e1ad8b7401f6a718a9c57c96905483/library/core/src/panicking.rs:111:5\n   3: core::option::Option<T>::unwrap\n             at /rustc/d5a82bbd26e1ad8b7401f6a718a9c57c96905483/library/core/src/option.rs:778:21\n   4: opendp::data::tests::test_vec\n             at ./src/data/mod.rs:155:32\n   5: opendp::data::tests::test_vec::{{closure}}\n             at ./src/data/mod.rs:115:19\n   6: core::ops::function::FnOnce::call_once\n             at /rustc/d5a82bbd26e1ad8b7401f6a718a9c57c96905483/library/core/src/ops/function.rs:507:5\n   7: core::ops::function::FnOnce::call_once\n             at /rustc/d5a82bbd26e1ad8b7401f6a718a9c57c96905483/library/core/src/ops/function.rs:507:5\nnote: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.\ntest data::tests::test_vec ... FAILED\n\nI am having a hard time figuring out if I am doing something wrong (I am a Rust beginner) or if there is indeed an issue with the current downcasting of Columns/IsVec. Surprisingly it seems to work fine in make_select_column.\nAny pointer / help would be very helpful, many thanks in advance!",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/667",
+                                "number": 667,
+                                "createdAt": "2023-03-24T11:13:09Z",
+                                "updatedAt": "2023-04-10T18:59:40Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABPuQgxg",
+                                            "name": "bug"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5gNTX4",
+                                "title": "Adjust privacy maps to return zero `d_out` if `d_in` is zero, regardless of scale",
+                                "bodyText": "This is a small QOL tweak.\nIf d_in is zero (including relaxation parameter if applicable), return a d_out of zero.\nElse if scale is zero, return infinity.\nOn many measurements, the current behavior returns infinity if scale is zero, even if d_in is zero.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/656",
+                                "number": 656,
+                                "createdAt": "2023-03-07T19:53:56Z",
+                                "updatedAt": "2023-04-10T19:01:04Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzIwODgwMDY5",
+                                            "name": "good first issue"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5gNNxk",
+                                "title": "Add `InfRecip` trait",
+                                "bodyText": "We use controlled rounding almost everywhere, but didn't control rounding of float reciprocals under the understanding that v.recip() is exact when v is finite and nonzero, due to the structure of floating-point numbers. However, this is not the case.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/655",
+                                "number": 655,
+                                "createdAt": "2023-03-07T19:36:13Z",
+                                "updatedAt": "2023-04-10T19:01:48Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDMw",
+                                            "name": "Effort 1 - Small :coffee:"
+                                        },
+                                        {
+                                            "id": "MDU6TGFiZWwyNzIwODgwMDY5",
+                                            "name": "good first issue"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5gNMRQ",
+                                "title": "`new_from_constant` should check that `d_in >= 0`",
+                                "bodyText": "We have bounds checks in many other places, but should have bounds checks everywhere.\nThis can be added by changing new_from_constant to convert to QO first, and then apply the signed-ness check. Add another Signed trait to DistanceConstant and then implement Signed for distance types.\nEG:\npub trait Sign {\n    fn is_negative(&self) -> bool;\n}\n\n\nmacro_rules! impl_is_negative {\n    ($($ty:ty)+) => ($(impl Sign for $ty {\n        fn is_negative(&self) -> bool {\n            self < &Self::zero()\n        }\n    })+)\n}\n\nimpl_is_negative!(f32 f64 u8 u16 u32 u64 u128 usize i8 i16 i32 i64 i128 isize);",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/654",
+                                "number": 654,
+                                "createdAt": "2023-03-07T19:31:15Z",
+                                "updatedAt": "2023-04-10T19:02:12Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDMw",
+                                            "name": "Effort 1 - Small :coffee:"
+                                        },
+                                        {
+                                            "id": "MDU6TGFiZWwyNzIwODgwMDY5",
+                                            "name": "good first issue"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5WG0gR",
+                                "title": "Add `cargo check --profile test` without features to CI",
+                                "bodyText": "This currently fails to compile!",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/611",
+                                "number": 611,
+                                "createdAt": "2022-11-10T22:05:49Z",
+                                "updatedAt": "2023-04-10T19:06:27Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5efjqe",
+                                "title": "split Rust `slice_as_object` and `object_as_slice`",
+                                "bodyText": "We don't need to bundle the AnyObject logic with FfiSlice; there can be an intermediate generic. If there is an intermediate generic, then row-by-row user-defined functions can directly parse slices without using an AnyObject intermediate.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/636",
+                                "number": 636,
+                                "createdAt": "2023-02-15T07:04:45Z",
+                                "updatedAt": "2023-04-10T19:06:43Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDMw",
+                                            "name": "Effort 1 - Small :coffee:"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5fVIVK",
+                                "title": "Rename `TotalOrd` trait to `ProductOrd`",
+                                "bodyText": "The TotalOrd trait in OpenDP has the expected behavior, but the name could be improved, as it doesn't actually implement a total order. Specifically on tuples, the product order is used. I propose naming the entire trait the ProductOrd:\nhttps://en.wikipedia.org/wiki/Product_order",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/644",
+                                "number": 644,
+                                "createdAt": "2023-02-24T23:01:12Z",
+                                "updatedAt": "2023-04-10T19:06:54Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDMw",
+                                            "name": "Effort 1 - Small :coffee:"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5fUy1i",
+                                "title": "Change `make_base_geometric` from \"deprecated\" to an \"alias\"",
+                                "bodyText": "I don't think we actually want to completely remove the \"geometric mechanism\", as it's likely what some people will look for first. It just needs to be a thin alias.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/643",
+                                "number": 643,
+                                "createdAt": "2023-02-24T21:17:17Z",
+                                "updatedAt": "2023-04-10T19:07:09Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDMw",
+                                            "name": "Effort 1 - Small :coffee:"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5U8D_i",
+                                "title": "version requirement includes semver metadata warning",
+                                "bodyText": "When running cargo commands, three variations of the following error are printed:\nwarning: /Users/michael/openDP/openDP/rust/opendp_derive/Cargo.toml: version requirement `0.0.0+development` for dependency `opendp_tooling` includes semver metadata which will be ignored, removing the metadata is recommended to avoid confusion\n\nCargo doesn't like the +development tag.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/599",
+                                "number": 599,
+                                "createdAt": "2022-10-27T04:56:36Z",
+                                "updatedAt": "2023-04-10T19:07:37Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABPuQgxg",
+                                            "name": "bug"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5i1HWI",
+                                "title": "Factor `make_base_*` into vector- and scalar- valued versions",
+                                "bodyText": "This seems to be a footgun in the library- passing D is awkward, and the proof documents are more convoluted because of the abstraction.\nWe would refactor the current constructors to simply call the scalar or vector-valued versions.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/685",
+                                "number": 685,
+                                "createdAt": "2023-04-06T21:55:15Z",
+                                "updatedAt": "2023-04-10T19:08:08Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5ilk_E",
+                                "title": "Update citation.cff to include individual contributors",
+                                "bodyText": "Update initial authors section to include all contributors.\n(changed after @Shoeboxam's comment below)",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/680",
+                                "number": 680,
+                                "createdAt": "2023-04-04T14:35:28Z",
+                                "updatedAt": "2023-04-12T18:53:00Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5jY42x",
+                                "title": "Remove visibility of Trans/Meas attributes",
+                                "bodyText": "It is possible to construct a measurement or transformation that does not satisfy domain/metric compatibility checks by constructing a measurement or transformation struct directly, instead of calling the new helper, or by mutating one of the members.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/698",
+                                "number": 698,
+                                "createdAt": "2023-04-14T03:56:30Z",
+                                "updatedAt": "2023-04-14T03:56:30Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5kD4FO",
+                                "title": "Add a prelude for OpenDP Python",
+                                "bodyText": "When you want to use the library, you oftentimes need a large set of imports:\nfrom opendp.combinators import *\nfrom opendp.transformations import *\nfrom opendp.measurements import *\nfrom opendp.domains import *\nfrom opendp.metrics import *\nfrom opendp.measures import *\nfrom opendp.typing import *\nfrom opendp.accuracy import *\nIt would be convenient if you could access all of these from a prelude module:\nimport opendp.prelude as odp\nor\nfrom opendp.prelude import *",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/711",
+                                "number": 711,
+                                "createdAt": "2023-04-21T15:52:10Z",
+                                "updatedAt": "2023-04-21T16:11:04Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5jxol4",
+                                "title": "Further optimization of backtrace handling",
+                                "bodyText": "In #691, we discovered that easy solution for enabling/disabling backtrace resolution isn't possible, because Rust caches the environment variable: https://doc.rust-lang.org/std/backtrace/index.html\nBecause the performance with std::backtrace is much faster than the old backtrace crate, we decided to live with the simple solution of always enabling backtraces.\nIf this becomes a problem, the proposed approach would be:\n\nHave an FFI function to set a flag. If the flag is on, Rust calls Backtrace::force_capture, otherwise it calls Backtrace::capture.\nPython sets the flag on startup, and unsets it during binary search.\nRust programs can opt into backtraces in the usual way (setting the standard env variable).",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/707",
+                                "number": 707,
+                                "createdAt": "2023-04-18T23:27:49Z",
+                                "updatedAt": "2023-04-25T14:42:29Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c475PX1",
+                                "title": "Base Exponential (Candidates) -- Implementation",
+                                "bodyText": "There's an exponential mechanism we could easily port from previous work on SmartNoise-Core. It would have to sit behind the \"floating-point\" flag.\nThis might be too difficult for a first issue, but having a prior implementation should help:\nhttps://github.com/opendp/smartnoise-core/blob/develop/runtime-rust/src/utilities/mechanisms.rs#L210-L265\nAn initial design direction could be as follows--\ninput_domain: VectorDomain<AllDomain<TI>> where TI is numeric\noutput_domain: TO where TO is integral\ninput_metric: AbsoluteDistance<Q>\noutput_metric: MaxDivergence<Q>\n\nThe measurement takes in a vector of scores, and emits the chosen index.\nOpen to other ideas. Another approach for numeric data, that would avoid specifying a candidate set up front would be to take in a sorted vector of (value, score) pairs. The exponential mechanism chooses a pair, and then a value is chosen uniformly from the region halfway to the prior value and halfway to the next value. This has different memory overheads though- the sorted input tuples will be expensive to compute and have double the memory overhead. It may be possible to formulate this as a combinator that evaluates each utility sequentially, and selecting an element via the gumbel distribution.\nChristina's base-2 exponential would be a more robust solution for noising, but I think that belongs in its own issue.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/324",
+                                "number": 324,
+                                "createdAt": "2021-09-22T23:29:25Z",
+                                "updatedAt": "2023-05-04T17:35:00Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c475RAg",
+                                "title": "Quantile Utility -- Implementation",
+                                "bodyText": "If we have an exponential mechanism that takes in a vector of scores (#324), we could add an aggregator for quantile utilities. The transformation could behave as follows--\ninput_domain: VectorDomain<AllDomain<T>> where T is numeric\noutput_domain: VectorDomain<AllDomain<T>>\ninput_metric: SymmetricDistance\noutput_metric: AbsoluteDistance<T>\n\nThe constructor would accept a candidate set, and the function is tasked with converting a vector of numerics into a vector of candidate scores. The exponential mechanism in #324 releases the index into said candidate set.\nFor a prior implementation, see: https://github.com/opendp/smartnoise-core/blob/develop/runtime-rust/src/components/quantile.rs#L112-L200\nIn the current state of the library, this output metric and domain will not chain with any other constructor than #324. But VectorDomain is probably not the right output domain, as the aggregated data is no longer a dataset!\nA downside with this approach is that multiple quantiles may not be released at once.\nWelcoming opinions on other directions.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/325",
+                                "number": 325,
+                                "createdAt": "2021-09-22T23:43:44Z",
+                                "updatedAt": "2023-05-04T17:35:37Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABPyNfVQ",
+                                            "name": "SmartNoise"
+                                        },
+                                        {
+                                            "id": "MDU6TGFiZWwyNzIwODgwMDY5",
+                                            "name": "good first issue"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "number": 15,
+                    "url": "https://github.com/opendp/opendp/milestone/15",
+                    "state": "OPEN"
+                },
+                {
+                    "id": "MI_kwDOFBAT4c4AjRGQ",
+                    "title": "SmartNoise",
+                    "description": "Tracking for a mix of short and long-term issues related to the SmartNoise SDK. As they are worked on, these issues will be moved to quarterly milestones",
+                    "closed": false,
+                    "progressPercentage": 0.0,
+                    "dueOn": null,
+                    "createdAt": "2023-04-04T15:26:35Z",
+                    "updatedAt": "2023-05-12T16:26:13Z",
+                    "issues": {
+                        "totalCount": 5,
+                        "nodes": [
+                            {
+                                "id": "I_kwDOFBAT4c5hUZKC",
+                                "title": "Computing tau thresholds for dimension censoring",
+                                "bodyText": "from @joshua-oss:\n\n\nWe hand-code the thresholds \"tau\" for censoring of rare dimensions with Laplace and Gaussian.  We also have a copy of \"Algorithm AS241: The Percentage Points of the Normal Distribution\", which is used in computing the tau threshold for dimension censoring with gaussian.\n\nIdeally, OpenDP could take a desired epsilon and delta and tell us the threshold to use for censoring rare dimensions.  This one is somewhat a concern because it's too easy for the thresholding computation to get out of sync with the actual mechanism that computes the counts, when updates to the counting mechanism are made.\n\nPriority: Longer-term after interactive measurements",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/658",
+                                "number": 658,
+                                "createdAt": "2023-03-20T19:29:03Z",
+                                "updatedAt": "2023-04-05T14:41:21Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABPyNfVQ",
+                                            "name": "SmartNoise"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5hUaIo",
+                                "title": "Approximate Bounds",
+                                "bodyText": "from @andrewvyrros:\n\nSeems like a nice usability thing.  Mike shared with MS half a year ago. Stumbling block for ppl new to dp.  Like an easy way to use some budget to let the system figure out min max bounds in DP Creator.  Different from min estimator and max estimator.  Not complicated to implement, but choose bin edges exponentially distance (?) and post process.\n\n\n\nSmartNoise SDK currently used hand-rolled implementation of: https://desfontain.es/thesis/Usability.html#usability-u-ding-\n\n\nPriority: Short-term",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/659",
+                                "number": 659,
+                                "createdAt": "2023-03-20T19:32:34Z",
+                                "updatedAt": "2023-04-05T14:41:22Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABPyNfVQ",
+                                            "name": "SmartNoise"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5hUbGu",
+                                "title": "Reservoir Sampling",
+                                "bodyText": "from @joshua-oss:\n\nwhen doing reservoir sampling [SmartNoise SDK], we use the database engine's randomness (built in rand() or random() function) to draw uniform random.  This probably doesn't make sense for OpenDP to address, but is flagged here for sake of completeness, since it's a potential weakness of SmartNoise SQL\n\nPriority: longer-term feature (after external compute)",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/660",
+                                "number": 660,
+                                "createdAt": "2023-03-20T19:35:57Z",
+                                "updatedAt": "2023-04-05T14:41:23Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABPyNfVQ",
+                                            "name": "SmartNoise"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5hUck5",
+                                "title": "Mechanisms related to MST Synthesizer",
+                                "bodyText": "Potentially add mechanisms related to the SmartNoise SDK MST Synthesizer, which uses hand-rolled mechanisms similar to:\n\nhttps://github.com/ryan112358/private-pgm/blob/master/mechanisms/mechanism.py\n\n\n\nNeeds more discussion.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/661",
+                                "number": 661,
+                                "createdAt": "2023-03-20T19:41:05Z",
+                                "updatedAt": "2023-04-05T14:41:24Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABPyNfVQ",
+                                            "name": "SmartNoise"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5hUhkj",
+                                "title": "PAC-Synth (DP-Marginals)",
+                                "bodyText": "from @joshua-oss:\n\nPAC-Synth (aka DP-Marginals) has some hand-rolled Laplace, but can probably use OpenDP directly, depending on the result of your discussions We have a code sample showing how to do DPSU in Spark, which uses np.random.laplace.\n\n\nNotes: If they integrate then it [PAC-Synth] will be taking noise from the OpenDP library. Web Assembly (?) is a blocker for them which could be addressed by replacing gmp-mpfr with rust-native crates or compiling gmp-mpfr for webassembly. (https://github.com/microsoft/synthetic-data-showcase)\nPriority: Longer-term",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/662",
+                                "number": 662,
+                                "createdAt": "2023-03-20T19:58:15Z",
+                                "updatedAt": "2023-04-05T14:41:24Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABPyNfVQ",
+                                            "name": "SmartNoise"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "number": 16,
+                    "url": "https://github.com/opendp/opendp/milestone/16",
+                    "state": "OPEN"
+                },
+                {
+                    "id": "MI_kwDOFBAT4c4AjYYt",
+                    "title": "2023-Q2: Partial Constructors, Domain/Metric Conversions (Phase I)",
+                    "description": "This is a milestone to change the signature of constructors to return a partial transformation, or partial measurement, instead of a transformation or measurement as we currently do. Partial transformations/partial measurements are functions that take an input domain and input metric, and return a transformation or measurement.\r\n\r\nFor a full explanation, see #664",
+                    "closed": false,
+                    "progressPercentage": 14.285714285714285,
+                    "dueOn": null,
+                    "createdAt": "2023-04-12T15:10:35Z",
+                    "updatedAt": "2023-05-04T17:45:29Z",
+                    "issues": {
+                        "totalCount": 7,
+                        "nodes": [
+                            {
+                                "id": "I_kwDOFBAT4c5hVV2r",
+                                "title": "Partial Constructors",
+                                "bodyText": "This is a proposal to change the signature of constructors to return a partial transformation, or partial measurement, instead of a transformation or measurement as we currently do. Partial transformations/partial measurements are functions that take an input domain and input metric, and return a transformation or measurement.\npartial_trans = make_clamp(bounds)\nclamper = partial_trans(input_domain, input_metric)\nThe appeal of this is that you could automatically use the domain descriptors from the previous transformation's output domain as input to the next transformation when chaining.\ninput_domain = vector_domain(atom_domain(int), size=20)\ninput_metric = symmetric_distance()\n\ndp_sum = (\n  (input_domain, input_metric) >>\n  make_clamp(bounds) >>\n  make_sized_bounded_sum() >>  # where the bounds are taken from make_clamp(bounds).output_domain\n  make_base_discrete_gaussian(scale)\n)\nExample with dataframes:\ninput_domain = dataframe_domain(\n  categorical_columns = {\n    \"colA\": [1, 2, 3, 4],\n    \"colB\": [\"A\", \"B\", \"C\"]\n  },\n  col_counts={\n      (\"colA\",): [223, 234, 4525, 34]\n  }\n)\ninput_metric = symmetric_distance()\n\ngrouped_dp_mean = (\n  (input_domain, input_metric) >>\n  make_partition(by=\"colA\", keep_columns=[\"colC\"]) >>\n  make_map_measurement(\n    make_select_column(\"colC\", float) >>\n    make_dp_mean(bounds))\n)\n(where the ProductDomain over which map_measurement operates comes from make_partition)",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/664",
+                                "number": 664,
+                                "createdAt": "2023-03-20T22:56:09Z",
+                                "updatedAt": "2023-04-12T15:14:03Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5lHRr4",
+                                "title": "add `make_laplace`",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/720",
+                                "number": 720,
+                                "createdAt": "2023-05-04T17:28:38Z",
+                                "updatedAt": "2023-05-04T17:28:39Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5lHRw-",
+                                "title": "add `make_gaussian`",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/721",
+                                "number": 721,
+                                "createdAt": "2023-05-04T17:28:55Z",
+                                "updatedAt": "2023-05-04T17:28:55Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5lHSBy",
+                                "title": "partial `make_cast`",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/722",
+                                "number": 722,
+                                "createdAt": "2023-05-04T17:29:53Z",
+                                "updatedAt": "2023-05-04T17:29:53Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5lHSVp",
+                                "title": "partial `make_cast_*`",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/723",
+                                "number": 723,
+                                "createdAt": "2023-05-04T17:30:56Z",
+                                "updatedAt": "2023-05-04T17:30:56Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5lHS-v",
+                                "title": "partial `make_row_by_row`",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/724",
+                                "number": 724,
+                                "createdAt": "2023-05-04T17:32:23Z",
+                                "updatedAt": "2023-05-04T17:32:23Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5i1Icm",
+                                "title": "pass input_domain/input_metric into library constructors",
+                                "bodyText": "Introduce a new convention to the library: the last (or first) two arguments of constructors are the input domain and input metric. This builds on #645, extending transformations throughout the library to work with all combinations of sized domains, bounded data, nullity and choice of dataset metric.\nThe python/R codegen and bootstrap macro can leverage this to automatically build the partial constructors in #664.",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/686",
+                                "number": 686,
+                                "createdAt": "2023-04-06T21:59:36Z",
+                                "updatedAt": "2023-05-04T17:45:29Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            }
+                        ]
+                    },
+                    "number": 18,
+                    "url": "https://github.com/opendp/opendp/milestone/18",
+                    "state": "OPEN"
+                },
+                {
+                    "id": "MI_kwDOFBAT4c4AjYZK",
+                    "title": "Polars DataFrames",
+                    "description": "Use the Polars library as the underlying OpenDP library dataframe implementation.\r\nReference: https://www.pola.rs/",
+                    "closed": false,
+                    "progressPercentage": 0.0,
+                    "dueOn": null,
+                    "createdAt": "2023-04-12T15:17:29Z",
+                    "updatedAt": "2023-05-04T17:51:42Z",
+                    "issues": {
+                        "totalCount": 4,
+                        "nodes": [
+                            {
+                                "id": "I_kwDOFBAT4c5jBOXk",
+                                "title": "take Polars on as a dependency for dataframes",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/695",
+                                "number": 695,
+                                "createdAt": "2023-04-10T19:46:39Z",
+                                "updatedAt": "2023-04-12T15:17:50Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c4910F9",
+                                "title": "Mental Health Notebook Port",
+                                "bodyText": "depends on #366\n\n\nPort the mental health notebook to the opendp library:\nhttps://github.com/opendp/smartnoise-samples/blob/master/analysis/tutorial_mental_health_in_tech_survey.ipynb\n(Note: this notebook was originally created by @MayanaPereira)",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/380",
+                                "number": 380,
+                                "createdAt": "2021-10-27T14:48:16Z",
+                                "updatedAt": "2023-05-04T17:49:21Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzIwODgwMDY5",
+                                            "name": "good first issue"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5OaBjt",
+                                "title": "Confidence interval estimation via stratified datasets",
+                                "bodyText": "Using algorithms from @Shuronglin!\nAll alg_Noise*.ipynb files.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/500",
+                                "number": 500,
+                                "createdAt": "2022-07-22T21:56:00Z",
+                                "updatedAt": "2023-05-04T17:50:19Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5OLm0Y",
+                                "title": "Parallel transformations/measurements",
+                                "bodyText": "We want to express this in terms of product constructions:\n// defined as d(x, x') = sum_i d_{inner}(x_i, x'_i), where x_i is the ith partition\nstruct ProductMetric<M> { _inner: PhantomData<M> }\nimpl<M> Metric for ProductMetric<M> {\n    type Distance = M::Distance;\n    ...\n}\n\nstruct ProductDomain<D> { inner_domains: Vec<D> }\nimpl<D> Domain for ProductDomain<D> {\n    type Carrier = Vec<D::Carrier>;\n}\nWe need the ProductDomain because we still want to allow some variability in the domain of each partition (for instance, in dataset size). However, this design does not allow the dataset in each partition to vary in structure.\nWe can still allow the dataset/query to vary within each partition by applying different transformations to each partition.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/494",
+                                "number": 494,
+                                "createdAt": "2022-07-20T18:30:06Z",
+                                "updatedAt": "2023-05-04T17:51:42Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            }
+                        ]
+                    },
+                    "number": 19,
+                    "url": "https://github.com/opendp/opendp/milestone/19",
+                    "state": "OPEN"
+                },
+                {
+                    "id": "MI_kwDOFBAT4c4Ajk8v",
+                    "title": "2023-Q3: Interactive Measurements (Mechanisms)",
+                    "description": "",
+                    "closed": false,
+                    "progressPercentage": 0.0,
+                    "dueOn": null,
+                    "createdAt": "2023-04-25T14:58:50Z",
+                    "updatedAt": "2023-05-04T17:46:28Z",
+                    "issues": {
+                        "totalCount": 4,
+                        "nodes": [
+                            {
+                                "id": "I_kwDOFBAT4c5ia9Hn",
+                                "title": "basic sequential composition odometer",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/673",
+                                "number": 673,
+                                "createdAt": "2023-04-03T02:43:12Z",
+                                "updatedAt": "2023-04-25T14:59:04Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5ifUqK",
+                                "title": "odometer FFI",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/677",
+                                "number": 677,
+                                "createdAt": "2023-04-03T16:16:03Z",
+                                "updatedAt": "2023-04-25T14:59:05Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "LA_kwDOFBAT4c8AAAABPyNfVQ",
+                                            "name": "SmartNoise"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5imOOM",
+                                "title": "concurrent composition",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/681",
+                                "number": 681,
+                                "createdAt": "2023-04-04T16:15:18Z",
+                                "updatedAt": "2023-04-25T14:59:06Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5imT2l",
+                                "title": "sparse vector mechanism",
+                                "bodyText": "",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/683",
+                                "number": 683,
+                                "createdAt": "2023-04-04T16:33:13Z",
+                                "updatedAt": "2023-04-25T14:59:07Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            }
+                        ]
+                    },
+                    "number": 20,
+                    "url": "https://github.com/opendp/opendp/milestone/20",
+                    "state": "OPEN"
+                },
+                {
+                    "id": "MI_kwDOFBAT4c4Ajtts",
+                    "title": "2023-Q1a: Performance / Maintenance",
+                    "description": "",
+                    "closed": false,
+                    "progressPercentage": 90.9090909090909,
+                    "dueOn": null,
+                    "createdAt": "2023-05-04T17:11:08Z",
+                    "updatedAt": "2023-05-11T22:08:23Z",
+                    "issues": {
+                        "totalCount": 11,
+                        "nodes": [
+                            {
+                                "id": "I_kwDOFBAT4c5lsGDK",
+                                "title": "Links from Python API docs to Rust API docs always use latest branch",
+                                "bodyText": "For example: https://docs.opendp.org/en/v0.6.2/api/python/opendp.measurements.html#opendp.measurements.make_base_discrete_gaussian points to https://docs.rs/opendp/latest/opendp/measurements/fn.make_base_discrete_gaussian.html.\nmake_rustdoc_link looks like it's doing the right thing, not sure what's breaking.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/728",
+                                "number": 728,
+                                "createdAt": "2023-05-11T15:31:09Z",
+                                "updatedAt": "2023-05-11T15:31:09Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5dTlTr",
+                                "title": "`discrete_gaussian_scale_to_accuracy` edge case",
+                                "bodyText": "discrete_gaussian_scale_to_accuracy returns an accuracy one too large when the scale is on the lower edge.\nReported by @alexWhitworth:\nimport opendp.accuracy as dp_a\nacc = 2.\ndp_a.discrete_gaussian_scale_to_accuracy(\n    dp_a.accuracy_to_discrete_gaussian_scale(accuracy= acc, alpha=0.1)\n    , alpha= 0.1\n) \n# returns 3.0, not 2.0\nThanks for the report!\nSolution:\nThe continuation condition in the loop should be total > 0., not total.is_sign_positive(). That is, the loop should break if the total is negative or exactly zero.",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/626",
+                                "number": 626,
+                                "createdAt": "2023-02-01T04:31:08Z",
+                                "updatedAt": "2023-05-04T17:11:51Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5daqM0",
+                                "title": "enrich user guide with more extensive notebooks for specific algorithms",
+                                "bodyText": "",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/627",
+                                "number": 627,
+                                "createdAt": "2023-02-02T03:42:35Z",
+                                "updatedAt": "2023-05-04T17:11:51Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5dvLYH",
+                                "title": "0.6.2 release preparation",
+                                "bodyText": "",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/631",
+                                "number": 631,
+                                "createdAt": "2023-02-06T14:16:24Z",
+                                "updatedAt": "2023-05-04T17:11:52Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5fl2gC",
+                                "title": "Remove output domain from Measurement",
+                                "bodyText": "",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/646",
+                                "number": 646,
+                                "createdAt": "2023-02-28T20:24:37Z",
+                                "updatedAt": "2023-05-04T17:11:52Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5furw8",
+                                "title": "use domain/metric/measure FFI to unify Python and Rust API",
+                                "bodyText": "",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/649",
+                                "number": 649,
+                                "createdAt": "2023-03-02T04:06:43Z",
+                                "updatedAt": "2023-05-04T17:11:53Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5iNYU-",
+                                "title": "Reformat Rust code",
+                                "bodyText": "",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/668",
+                                "number": 668,
+                                "createdAt": "2023-03-30T13:52:45Z",
+                                "updatedAt": "2023-05-04T17:11:53Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5iPr8d",
+                                "title": "Deprecate `RelationDebug`",
+                                "bodyText": "Some relations pass richer debug information back to the user via errors. Unfortunately, symbol resolution for error construction is very slow, especially on Linux. In most cases, this doesn't matter. But in relations, we should be more careful not to throw exceptions, because relations are used in hot code paths.\nAn alternative is to only resolve symbols if the error variant isn't RelationDebug.",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/670",
+                                "number": 670,
+                                "createdAt": "2023-03-30T20:39:20Z",
+                                "updatedAt": "2023-05-04T17:11:53Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5i8QIA",
+                                "title": "add extrinsics module for non-Rust code contributions",
+                                "bodyText": "We should have a place to store code contributions written in Python or R. From discussions with Andy, this can be in opendp.extrinsics.",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/693",
+                                "number": 693,
+                                "createdAt": "2023-04-09T18:26:30Z",
+                                "updatedAt": "2023-05-04T17:11:54Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5kkUFZ",
+                                "title": "Fix Python codegen links",
+                                "bodyText": "",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/715",
+                                "number": 715,
+                                "createdAt": "2023-04-27T17:13:08Z",
+                                "updatedAt": "2023-05-04T17:11:54Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5lsEMO",
+                                "title": "Add free functions for supporting elements",
+                                "bodyText": "",
+                                "state": "CLOSED",
+                                "url": "https://github.com/opendp/opendp/issues/727",
+                                "number": 727,
+                                "createdAt": "2023-05-11T15:26:37Z",
+                                "updatedAt": "2023-05-11T22:08:23Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            }
+                        ]
+                    },
+                    "number": 21,
+                    "url": "https://github.com/opendp/opendp/milestone/21",
+                    "state": "OPEN"
+                },
+                {
+                    "id": "MI_kwDOFBAT4c4AjtwL",
+                    "title": "2023-Q2: CI Improvements",
+                    "description": "",
+                    "closed": false,
+                    "progressPercentage": 0.0,
+                    "dueOn": null,
+                    "createdAt": "2023-05-04T17:52:09Z",
+                    "updatedAt": "2023-05-04T18:06:17Z",
+                    "issues": {
+                        "totalCount": 3,
+                        "nodes": [
+                            {
+                                "id": "I_kwDOFBAT4c5kbvbp",
+                                "title": "Add a nightly build process",
+                                "bodyText": "Improve daily testing/checks. (e.g. assists with parts of the project like proofs)\n\nPublish builds to Test PyPI (https://test.pypi.org/)",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/714",
+                                "number": 714,
+                                "createdAt": "2023-04-26T13:04:35Z",
+                                "updatedAt": "2023-05-04T17:53:20Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5VAYd-",
+                                "title": "Release process tweaks",
+                                "bodyText": "Tweaks that could be made in the release process (noticed in 0.6.0 and 0.6.1):\n\nrelease_tool.py init -t patch should use release branch for ref, not main\nrelease_tool.py preflight should install opendp with run_command, not run_command_with_retries\nrelease_tool.py {preflight|postflight} should run all tests, not just tools/test.py\nrelease_tool.py watch needs better logic to find the right workflow (and possibly a pause/retries)\nRemove toml from tools/requirements-publish_tool.py",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/601",
+                                "number": 601,
+                                "createdAt": "2022-10-27T19:25:48Z",
+                                "updatedAt": "2023-05-04T17:58:31Z",
+                                "labels": {
+                                    "nodes": [
+                                        {
+                                            "id": "MDU6TGFiZWwyNzY3MjI2MDMw",
+                                            "name": "Effort 1 - Small :coffee:"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "I_kwDOFBAT4c5lHh1z",
+                                "title": "Test docs as part of PR validation",
+                                "bodyText": "Docs are generated after PRs are merged, so it's possible to break the docs without realizing it.\nWe should have a step somewhere (probably smoke-test.yml) that tests docs, too.",
+                                "state": "OPEN",
+                                "url": "https://github.com/opendp/opendp/issues/725",
+                                "number": 725,
+                                "createdAt": "2023-05-04T18:06:03Z",
+                                "updatedAt": "2023-05-04T18:06:17Z",
+                                "labels": {
+                                    "nodes": []
+                                }
+                            }
+                        ]
+                    },
+                    "number": 22,
+                    "url": "https://github.com/opendp/opendp/milestone/22",
+                    "state": "OPEN"
+                },
+                {
+                    "id": "MI_kwDOFBAT4c4Aj1Ye",
+                    "title": "999 - Performance / Maintenance",
+                    "description": "Used retrospectively to see issues completed per quarter (or other time period) related to maintenance/performance. These issues are indirectly related to functionality initiatives.",
+                    "closed": false,
+                    "progressPercentage": 0.0,
+                    "dueOn": null,
+                    "createdAt": "2023-05-12T16:23:37Z",
+                    "updatedAt": "2023-05-12T16:23:37Z",
+                    "issues": {
+                        "totalCount": 0,
+                        "nodes": []
+                    },
+                    "number": 24,
+                    "url": "https://github.com/opendp/opendp/milestone/24",
+                    "state": "OPEN"
+                }
+            ],
+            "totalCount": 13
+        }
+    }
+}

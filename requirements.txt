@@ -1,3 +1,5 @@
 gql[aiohttp]
 requests==2.28.2
 XlsxWriter==3.0.8
+pandas
+
