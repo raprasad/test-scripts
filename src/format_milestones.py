@@ -113,18 +113,35 @@ class MilestoneFormatter:
 
         issue_data_rows = []
         for issue_info in issue_data_list:
+
+            # Format effort label
+            effort_label = self.retrieve_by_prefix(issue_info['labels']['nodes'], 'Effort')
+            priority_label = self.retrieve_by_prefix(issue_info['labels']['nodes'], 'Priority')
+
             single_issue_data_row = ms_data_row_start + [
                 issue_info['id'],
                 issue_info['number'],
                 issue_info['title'],
                 issue_info['bodyText'],
                 issue_info['state'],
+                effort_label,
+                priority_label,
                 issue_info['createdAt'],
                 issue_info['updatedAt'],
                 issue_info['url'],]
             issue_data_rows.append(single_issue_data_row)
 
         return issue_data_rows
+
+    def retrieve_by_prefix(self, label_data, label_prefix):
+        """Iterate through labels and pull out the one that starts with the prefix"""
+        chosen_label = [l['name'] for l in label_data if l['name'].startswith(label_prefix)]
+        if chosen_label:
+            chosen_label = chosen_label[0]
+        else:
+            chosen_label = None
+
+        return chosen_label
 
     def get_headers_issue_report(self):
         """Return a list of column headers"""
@@ -136,13 +153,15 @@ class MilestoneFormatter:
                 'Issue Title',
                 'Issue Description',
                 'Issue State',
+                'Effort',
+                'Priority',
                 'Issue Created Date',
                 'Issue Updated Date'
                 'Issue URL',
                 ]
 
 if __name__ == '__main__':
-    input_json = join(svals.GRAPHQL_RESULTS, 'milestone_summary_2023-05-12_12-36-54.json')
+    input_json = join(svals.GRAPHQL_RESULTS, 'milestone_summary_2023-05-12_12-58-57.json')
     mf = MilestoneFormatter(input_json)
 
 
