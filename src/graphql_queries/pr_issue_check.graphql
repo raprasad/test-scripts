@@ -1,0 +1,51 @@
+{
+  repository(owner: "opendp", name: "opendp") {
+    nameWithOwner
+    id
+    pullRequests(states: [OPEN], last: 1) {
+      totalCount
+      nodes {
+        id
+        title
+        state
+        isDraft
+        labels(first: 10) {
+          nodes {
+            name
+          }
+        }
+        closingIssuesReferences(first: 10) {
+          nodes {
+            title
+            id
+            url
+            bodyText
+            labels(first: 10) {
+              nodes {
+                id
+                name
+              }
+            }
+            state
+            assignees(first: 10) {
+              nodes {
+                email
+                id
+                name
+              }
+              totalCount
+            }
+          }
+        }
+        assignees(first: 10) {
+          nodes {
+            email
+            name
+          }
+        }
+        url
+      }
+    }
+    url
+  }
+}

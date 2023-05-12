@@ -7,3 +7,4 @@ See: https://docs.github.com/en/authentication/keeping-your-account-and-data-sec
 """
 
 API_TOKEN = '--put your token here--'
+GQL_API_TOKEN = '--put your token here--'  # Note: You can choose to use the same token as "API_TOKEN"

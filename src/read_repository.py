@@ -16,6 +16,7 @@ from settings_gh_repo import *
 
 _ISSUES_PER_PAGE = 100
 
+
 def read_issues():
     """Read GitHub issues. Very basic"""
 
@@ -82,7 +83,6 @@ def get_open_issue_count():
     return json_resp['open_issues_count']
 
 
-
 def list_labels():
     read_url = (f'{svals.GH_API_URL}/repos/{GH_REPO_OWNER}/{GH_REPO_NAME}'
                 f'/labels?per_page=100')
@@ -93,6 +93,7 @@ def list_labels():
     json_resp = r.json()
     print(json.dumps(json_resp, indent=4))
     print('num labels:', len(json_resp))
+
 
 if __name__ == '__main__':
     read_issues()
