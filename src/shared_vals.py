@@ -16,13 +16,17 @@ if not isdir(GRAPHQL_RESULTS):
     makedirs(GRAPHQL_RESULTS)
 
 
+# REST API
 GH_API_URL = 'https://api.github.com'
 GH_HEADERS = OrderedDict({'Accept': 'application/vnd.github+json',
                           'Authorization': 'Bearer %s' % API_TOKEN,
                           'X-GitHub-Api-Version': '2022-11-28'})
 
+# GraphQL API
 GH_GQL_API_URL = 'https://api.github.com/graphql'
+GH_GQL_HEADERS = {'Authorization': 'Bearer %s' % GQL_API_TOKEN}
 
+# Output directories
 TEST_DATA_DIR = join(dirname(dirname(__file__)), 'test_data')
 GITHUB_JSON_DATA_DIR = join(TEST_DATA_DIR, 'github_json')
 EXCEL_OUTPUT_DIR = join(TEST_DATA_DIR, 'output')

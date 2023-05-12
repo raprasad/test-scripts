@@ -1,0 +1,41 @@
+{
+  repository(owner: "opendp", name: "opendp") {
+    nameWithOwner
+    id
+    milestones(first: 100, states: [OPEN]) {
+      nodes {
+        id
+        title
+        description
+        closed
+        progressPercentage
+        dueOn
+        createdAt
+        updatedAt
+        issues(first: 100, states: [OPEN, CLOSED]) {
+          totalCount
+          nodes {
+            id
+            title
+            bodyText
+            state
+            url
+            number
+            createdAt
+            updatedAt
+            labels(first: 10, orderBy: {field: NAME, direction: ASC}) {
+              nodes {
+                id
+                name
+              }
+            }
+          }
+        }
+        number
+        url
+        state
+      }
+      totalCount
+    }
+  }
+}
