@@ -2,7 +2,7 @@
 Create a tabular summary of milestones and issues
 """
 import json
-import sys
+# import sys
 from datetime import datetime
 from os.path import isfile, join
 
@@ -43,10 +43,12 @@ class MilestoneFormatter:
 
         self.milestone_output_data = basic_milestone_data
 
+        # Create a JSON file
         json_output_filename = join(svals.GITHUB_JSON_DATA_DIR, (f'milestone_basics_{self.today_str}.json'))
         json.dump(self.milestone_output_data, open(json_output_filename, 'w'), indent=2)
         print('file written: ', json_output_filename)
 
+        # Create a CSV file
         df = pd.DataFrame(data=self.milestone_output_data[1:],
                           columns=self.milestone_output_data[0])
 
@@ -106,17 +108,15 @@ class MilestoneFormatter:
         df = pd.DataFrame(data=self.milestone_output_data[1:],
                           columns=self.milestone_output_data[0])
 
+        #
         csv_filename = join(svals.GITHUB_JSON_DATA_DIR, (f'milestone_issues_{self.today_str}.csv'))
         df.to_csv(csv_filename, index=False)
         print(f'CSV file written: {csv_filename}')
-        #print(df.head())
-        sys.exit(0)
 
+        # Create a JSON file
         json_output_filename = join(svals.GITHUB_JSON_DATA_DIR, (f'milestone_issues_{self.today_str}.json'))
         json.dump(self.milestone_output_data, open(json_output_filename, 'w'), indent=2)
         print('file written: ', json_output_filename)
-
-
 
     def process_milestone_issue_report(self, ms):
         """Process a single milestone and its related issues, return a row of dat"""
@@ -178,5 +178,5 @@ class MilestoneFormatter:
 
 
 if __name__ == '__main__':
-    input_json = join(svals.GRAPHQL_RESULTS, 'milestone_summary_2023-05-12_12-58-57.json')
+    input_json = join(svals.GRAPHQL_RESULTS, 'milestone_summary_2023-05-12_13-58-02.json')
     mf = MilestoneFormatter(input_json)
